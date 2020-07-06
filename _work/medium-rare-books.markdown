@@ -6,10 +6,10 @@ tags: ['web', 'type']
 year: "2018"
 client:	Intercom
 image: .webm
-theme: check
+theme: white
 ---
 
-<header class="header w-full lg:w-5/6 xl:w-3/6 lg: pl-10 xl:px-10">
+<header class="header sm-container lg:w-5/6 lg:pl-10 xl:pl-20">
   <a href="https://intercombrand.studio/" class="block text-center image mb-10">
       <div class="bg-black">
         <svg class="inline-block" width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@ theme: check
     <h1 class="text-center mb-5 mega" itemprop="name headline">{{ page.title }}</h1>
     <p class="text-center caption mb-5">{{ page.client }} {{ page.year }}</p>
     <p class="text-center subhead mb-5">The Medium Rare Books Library began in early 2018 with the acquisition of a selection of rare books from Dave Cuzner, Founder and Senior Editor at <a class="squiggle" href="https://grainedit.com/">Grain Edit</a> for the Intercom Brand Studio. Our brand director, Stewart Scott-Curan, started the library to help the team get better at critically assessing what elements should and should not influence their work. Our experience with the library inspired us to better organize and make available that material online.</p>
-    <div class="block text-center text-grey mx-auto lg:w-2/3 mb-10">
+    <div class="block text-center mx-auto lg:w-2/3 mb-10">
       <dl>
       <dt class="inline caption">My contributions</dt>
       <dd class="inline body">layout, type design, icons, web dev</dd>
@@ -40,8 +40,8 @@ theme: check
       </dl>
     </div>
 </header>
-<hr class="clouds w-full block xl:hidden lg:-mb-20 z-20 "/>
-<section class="work w-full lg:rounded-lg lg:px-32 lg:py-20 xl:p-0 xl:w-2/6 lg:bg-grey xl:bg-transparent z-10">
+<hr class="clouds w-full block lg:-mb-20 z-20 "/>
+<section class="work sm-container w-full lg:rounded-lg lg:px-32 lg:py-20 lg:bg-grey z-10">
   <div class="pullquote text-center mb-5">Our new library of over 200 uncatalogued books was useless.</div>
   <div class="block text-center body mx-auto lg:w-2/3 mb-10">
      With day to day deadlines and priorities, nobody had the energy to get some casual color inspo by laboring through the mammoth collection. That problem definitely needed to be solved, but we thought we could go a little above and be cool about it? From the beginning, Kelly was scoping more than just a website.

@@ -39,6 +39,12 @@
 @tailwind components;
 
 @tailwind utilities;
+@media (max-width: 600px) {
+  .sm-container {
+    @apply mx-auto;
+    max-width: 96%;
+  }
+}
 .max-w-800 {
   max-width: 800px;
 }
@@ -74,7 +80,7 @@
 }
 .image {
   @apply border-2 border-black rounded-tl-lg rounded-tr-lg;
-  box-shadow: 5px 5px 0px #000000;
+  box-shadow: 5px 5px 0px theme('colors.black');
 }
 .clouds {
   height: 500px;
