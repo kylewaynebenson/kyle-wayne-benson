@@ -1,0 +1,37 @@
+---
+layout: default
+theme: check
+---
+  <section class="mb-10 sm:mb-16 md:mb-20 lg:mb-32"><!--hero-->
+    <ul class="flex flex-wrap">
+    {% for post in site.work %}
+        <li class="w-1/2 sm:w-1/3 xl:w-1/4 p-10 text-center">
+          <a href="{{ post.url }}">
+            {% if post.image %}
+              {% if post.image != ".webm" %}
+                <img class="inline-block max-w-full w-64" src="images/{{ post.title | slugify }}/thumbnail{{post.image}}">
+              {% else %}
+                <video class="inline-block max-w-full w-64" autoplay="autoplay" loop>
+                  <source src="images/{{ post.title | slugify }}/thumbnail{{post.image}}" type="video/webm">
+                </video>
+              {% endif %}
+            {% endif %}
+            <div class="font-talmage font-regular text-3xl leading-none">{{post.title}}</div>
+            <!--{% if post.tags != "unknown" %}
+            <ul>
+              {% for tag in post.tags %}
+                <li>{{tag}}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}-->
+            {% if post.client != "unknown" %}
+            <div class="font-geordi font-semibold text-1xl leading-tight">{{post.client}}</div>
+            {% endif %}
+            <!--{% if post.year != "unknown" %}
+            <div>{{post.year}}</div>
+            {% endif %}-->
+          </a>
+        </li>
+    {% endfor %}
+    </ul>
+  </section><!--/hero-->

@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'VC Talmage ExtraCondensed';
+  font-weight: 400;
+  src: url('../../fonts/TalmageExtraCondensed-Regular.woff2') format('woff2'),
+    url('../../fonts/TalmageExtraCondensed-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'VC Talmage ExtraCondensed';
+  font-weight: 600;
+  src: url('../../fonts/TalmageExtraCondensed-Semibold.woff2') format('woff2'),
+    url('../../fonts/TalmageExtraCondensed-Semibold.woff') format('woff');
+}
+@font-face {
+  font-family: 'VC Talmage ExtraCondensed';
+  font-weight: 700;
+  src: url('../../fonts/TalmageExtraCondensed-Bold.woff2') format('woff2'),
+    url('../../fonts/TalmageExtraCondensed-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'VC Geordi';
+  font-weight: 700;
+  src: url('../../fonts/VCGeordi-Bold.woff2') format('woff2'),
+    url('../../fonts/VCGeordi-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'VC Geordi';
+  font-weight: 600;
+  src: url('../../fonts/VCGeordi-Semibold.woff2') format('woff2'),
+    url('../../fonts/VCGeordi-Semibold.woff') format('woff');
+}
+@font-face {
+  font-family: 'VC Geordi';
+  font-weight: 400;
+  src: url('../../fonts/VCGeordi-Medium.woff2') format('woff2'),
+    url('../../fonts/VCGeordi-Medium.woff') format('woff');
+}
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+.max-w-800 {
+  max-width: 800px;
+}
+.max-w-1000 {
+  max-width: 1000px;
+}
+.text-md {
+  font-size: 1rem;
+}
+.text-7xl {
+    font-size: 5rem;
+}
+.text-8xl {
+    font-size: 6rem;
+}
+.bg-check {
+  background: url(../../images/backgrounds/check.png) repeat;
+}
+.body {
+  @apply font-geordi text-md font-medium tracking-wide;
+}
+.caption {
+  @apply font-geordi text-xs font-bold tracking-wider;
+}
+.subhead {
+  @apply font-geordi text-2xl font-medium tracking-wide;
+}
+.pullquote {
+  @apply font-talmage text-5xl font-medium leading-none;
+}
+.mega {
+  @apply font-talmage font-bold text-8xl leading-none;
+}
+.image {
+  @apply border-2 border-black rounded-tl-lg rounded-tr-lg;
+  box-shadow: 5px 5px 0px #000000;
+}
+.clouds {
+  height: 500px;
+  width: 120%;
+  margin-left: -10%;
+  margin-right: -10%;
+  background: url(../../images/squiggles/clouds.png) bottom no-repeat;
+  background-size: cover;
+  border: none;
+}
+.squiggle {
+  position: relative;
+}
+.squiggle:after {
+  position: absolute;
+  content: ''; /* this is important */
+  height: 20px;
+  width: 150px;
+  left: 50%;
+  margin-left: -75px;
+  bottom: -16px;
+  z-index: 2;
+  background: url(../../images/squiggles/line-1.gif) bottom no-repeat;
+  background-size: 100% auto;
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+}
+.squiggle:hover:after {
+    opacity: 1;
+}
+#worknav {
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+}
+.marquee {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.marquee span {
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+    transition: transform 2s ease-in-out;
+    transform: translateX(0px);
+}
+.marquee:hover span {
+  width: 100%;
+  transform: translateX(-50%);
+}

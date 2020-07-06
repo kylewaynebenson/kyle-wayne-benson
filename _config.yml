@@ -1,0 +1,33 @@
+title: Kyle Wayne Benson
+description: Art director, type designer and illustrator in Sunny Oakland California
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+images: "http://localhost:4000/images/"
+
+#Links within the site
+documentation: "https://lyft.github.io/amundsen/"
+getstarted: "https://github.com/lyft/amundsen"
+email: "hello@verycoolstudio.com"
+destination: dist
+
+#People Links
+KellyCarpenter: "https://dribbble.com/thecarpenter"
+MattYow: "https://mattyow.com/"
+CarlyWright: "https://www.instagram.com/carknowsdatswright/"
+
+collections:
+  work:
+    output: true
+    sort_by: order
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.config.js

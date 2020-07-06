@@ -1,0 +1,20 @@
+<ul>
+  <div class="caption mb-4">Bored? Here's more:</div>
+{% for post in site.work %}
+    <li class="mb-4 rounded-lg bg-grey px-3 py-2">
+      <a href="{{ post.url }}">
+        <div class="font-talmage font-regular text-3xl text-left leading-none  {% if post.title.size > 19 %}marquee max-w-full{% endif %}"><span>{{post.title}}</span></div>
+        {% if post.tags != "unknown" %}
+        {% endif %}
+        <div class="flex">
+          {% if post.year != "unknown" %}
+          <div class="caption flex-grow">{{post.client}}</div>
+          {% endif %}
+          {% if post.client != "unknown" %}
+          <div class="caption">{{post.year}}</div>
+          {% endif %}
+        </div>
+      </a>
+    </li>
+{% endfor %}
+</ul>
