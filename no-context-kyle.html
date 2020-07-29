@@ -1,0 +1,59 @@
+---
+layout: default
+theme: terrazzo
+title: No Context Kyle
+---
+  <section class="my-5 sm:my-8 md:my-10 lg:my-16 relative"><!--hero-->
+    <div class="container mx-auto">
+      <div class="xl:px-32">
+        <h1 class="text-center mb-5 mega" itemprop="name headline">{{ page.title }}</h1>
+        <p class="text-center caption mb-5">2013-Current</p>
+        <p class="text-center subhead mb-5 lg:w-2/3 lg:mx-auto">A lot of my work is one-off and doesn't really justify having a case study, and dribbble and instagram kinda suck now, but every child of mine needs a roof over its head. None of these link out, so if you want more just like <a class="glow-small" href="mailto:{{site.email}}">email me</a> I guess.</p>
+        <nav class="flex px-5 py-5 w-1/2 md:w-2/6 xxl:w:1/12 bg-white top-0 mx-auto m-10 shadow-lg sticky rounded-full z-20">
+            <audio controls autoplay>
+              <source src="horse.ogg" type="audio/ogg">
+              <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio tag.
+            </audio>
+        </nav>
+      </div>
+      <ul class="flex flex-wrap-reverse items-center justify-center">
+        {% for image in site.static_files %}
+          {% assign mod = forloop.index| modulo: 3 %}
+          {% if image.path contains 'images/no-context-kyle' %}
+            {% if image.path contains '-ls.webm' %}
+            <li class="w-1/2 sm:w-2/3 xl:w-1/2 xxl:w-4/12 p-2 sm:p-3 md:p-4 lg:p-6 zoom-{{ mod }}">
+                <video class="max-w-full rounded-lg" autoplay="autoplay" loop>
+                  <source src="{{ image.path }}" type="video/webm">
+                </video>
+            </li>
+            {% elsif image.path contains '.webm' %}
+            <li class="w-1/2 sm:w-1/3 xl:w-1/4 xxl:w-2/12 p-2 sm:p-3 md:p-4 lg:p-6">
+                <video class="max-w-full rounded-lg" autoplay="autoplay" loop>
+                  <source src="{{ image.path }}" type="video/webm">
+                </video>
+            </li>
+            {% elsif image.path contains '-fw.' %}
+              <li class="w-full xl:w-11/12 xxl:w-10/12 p-2 sm:p-3 md:p-4 lg:p-6 zoom-{{ mod }}">
+                  <img class="rounded-lg" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
+              </li>
+
+            {% elsif image.path contains '-ls.' %}
+              <li class="w-1/2 sm:w-2/3 xl:w-1/2 xxl:w-4/12 p-2 sm:p-3 md:p-4 lg:p-6 zoom-{{ mod }}">
+                  <img class="rounded-lg" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
+              </li>
+
+              {% elsif image.path contains '-sq.' %}
+                <li class="w-1/2 sm:w-1/3 xl:w-1/4 xxl:w-2/12 p-2 sm:p-3 md:p-4 lg:p-6 wiggle zoom-{{ mod }}">
+                    <img class="rounded-lg w-full" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
+                </li>
+            {% else %}
+              <li class="w-1/2 sm:w-1/3 xl:w-1/4 xxl:w-2/12 p-2 sm:p-3 md:p-4 lg:p-6 zoom-{{ mod }}">
+                  <img class="rounded-lg w-full" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
+              </li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </section><!--/hero-->

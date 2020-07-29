@@ -2,10 +2,6 @@
 layout: work
 ---
 {% include header.html %}
-<div class="flex flex-wrap container mx-auto relative z-20">
-  <nav id="worknav" class="hidden lg:block w-full lg:w-1/6 lg:sticky top-0 z-0">
-    {% include workmenu.html %}
-  </nav>
-  {{ content }}
-</div>
+{{ content }}
+{% include about.html %}
 {% include footer.html %}

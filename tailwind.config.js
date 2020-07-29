@@ -1,10 +1,30 @@
 module.exports = {
   theme: {
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      'xxl': '1500px',
+
+      'xxxl': '2000px',
+
+      'xxxxl': '2500px',
+    },
     colors: {
       transparent: 'transparent',
-      black: '#000000',
+      black: '#0E0A0C',
       white: '#ffffff',
-      purple: '#050066',
+      purple: '#9B51E0',
+      darkblue: '#393F5C',
       orange: '#EE724C',
       tan: '#F6F5EF',
       periwinkle: '#7798F8',
@@ -15,6 +35,9 @@ module.exports = {
     stroke: theme => ({
       'purple-black': theme('colors.purple.black'),
       'pink': theme('colors.pink'),
+    }),
+    gradients: theme => ({
+      'gray-lightgray': [theme('colors.gray.200'), theme('colors.gray.300')],
     }),
     fontFamily: {
       geordi: ['VC Geordi', 'sans-serif'],

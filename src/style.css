@@ -39,11 +39,82 @@
 @tailwind components;
 
 @tailwind utilities;
-@media (max-width: 600px) {
+
+@media (max-width: 640px) {
+  .container {
+    width: 96%;
+    min-width: 220px;
+  }
   .sm-container {
     @apply mx-auto;
-    max-width: 96%;
+    width: 96%;
+    min-width: 220px;
   }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 97%;
+  }
+  .md-container {
+    width: 96%;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 98%;
+  }
+}
+.container {
+  @apply mx-auto;
+  width: 96%;
+  max-width: 1500px;
+}
+@keyframes wiggle {
+    0%, 50%, 100% { transform: rotate(0deg);}
+    25% { transform: rotate(10deg);}
+    75% { transform: rotate(-10deg);}
+}
+.wiggle {
+    animation: wiggle 2s infinite steps(4);
+}
+@keyframes zoom {
+    0%, 50%, 100% { transform: scale(1);}
+    25% { transform: scale(1.05);}
+    75% { transform: scale(.9);}
+}
+.zoom-0 {
+    animation: zoom 4s infinite steps(8);
+}
+.zoom-1 {
+    animation: zoom 8s infinite steps(16);
+}
+.zoom-2 {
+    animation: zoom 8s infinite steps(16);
+    animation: wiggle 4s infinite steps(8);
+}
+.aqua {
+  border: 2px solid #ccc;
+  color: #fff;
+  border-radius: 50vh;
+  text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+  background: linear-gradient(90deg, rgba(28, 91, 155, 0.8) 0%, rgba(108, 191, 255, .9) 90%);
+  position: relative;
+}
+.aqua:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  border-radius: 8px;
+  height: 1px;
+  width: 142px;
+  padding: 8px 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 95%);
+}
+.flex-column-wrap {
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .max-w-800 {
   max-width: 800px;
@@ -60,11 +131,17 @@
 .text-8xl {
     font-size: 6rem;
 }
+.leading-tighter {
+  line-height: 1.1;
+}
 .bg-check {
   background: url(../../images/backgrounds/check.png) repeat;
 }
 .body {
   @apply font-geordi text-md font-medium tracking-wide;
+}
+.body p {
+  @apply mb-5;
 }
 .caption {
   @apply font-geordi text-xs font-bold tracking-wider;
@@ -73,7 +150,8 @@
   @apply font-geordi text-2xl font-medium tracking-wide;
 }
 .pullquote {
-  @apply font-talmage text-5xl font-medium leading-none;
+  @apply font-talmage text-5xl font-medium;
+  line-height: 1.1;
 }
 .mega {
   @apply font-talmage font-bold text-8xl leading-none;
@@ -82,14 +160,85 @@
   @apply border-2 border-black rounded-tl-lg rounded-tr-lg;
   box-shadow: 5px 5px 0px theme('colors.black');
 }
+.stroke-black {
+  stroke:#0E0A0C;
+  stroke-width:3;
+}
 .clouds {
   height: 500px;
-  width: 120%;
-  margin-left: -10%;
-  margin-right: -10%;
+  width: 100%;
   background: url(../../images/squiggles/clouds.png) bottom no-repeat;
   background-size: cover;
   border: none;
+}
+.bg-stars {
+  background: theme('colors.periwinkle') url(../../images/backgrounds/stars.png);
+  background-size: 700px;
+}
+.bg-terrazzo {
+  background: theme('colors.white') url(../../images/backgrounds/terrazzo.png);
+  background-size: 189px 260px;
+}
+.eyes {
+  position: relative;
+}
+.eyes:before {
+  position: absolute;
+  content: ''; /* this is important */
+  height: 54px;
+  width: 80px;
+  left: 110%;
+  top: 50%;
+  margin-top: -27px;
+  z-index: 2;
+  background: url(../../images/squiggles/eyes.gif) bottom no-repeat;
+  background-size: 100% auto;
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+}
+.eyes:hover:before {
+    opacity: 1;
+}
+.glow-small {
+  position: relative;
+}
+.glow-small:before {
+  position: absolute;
+  content: ''; /* this is important */
+  height: 170px;
+  width: 190px;
+  left: 50%;
+  top: 50%;
+  transform:translateX(-50%) translateY(-50%);
+  z-index: 2;
+  background: url(../../images/squiggles/glow-2.gif) bottom no-repeat;
+  background-size: 100% auto;
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+}
+.glow-small:hover:before {
+    opacity: 1;
+}
+.glow {
+  position: relative;
+}
+.glow:after, .glow:before {
+  position: absolute;
+  content: ''; /* this is important */
+  height: 190px;
+  width: 70px;
+  top: 50%;
+  margin-top: -95px;
+  z-index: 2;
+  background: url(../../images/squiggles/glow-1.gif) bottom no-repeat;
+  background-size: 100% auto;
+}
+.glow:after {
+  left: -90px;
+}
+.glow:before {
+ transform:scaleX(-1);
+ right: -90px;
 }
 .squiggle {
   position: relative;
@@ -111,9 +260,25 @@
 .squiggle:hover:after {
     opacity: 1;
 }
-#worknav {
-  overflow: hidden;
-  transition: width 1s ease-in-out;
+
+#sideNav {
+  transition: width 500ms ease-in-out;
+  width: 0px;
+}
+#main {
+  width: 100%;
+  transition: width 500ms ease-in-out, opacity 2s ease-in-out;
+}
+@media (min-width: 769px) {
+  #sideNav.active {
+        width: 300px;
+  }
+  #main.active {
+        width: calc(100% - 300px);
+  }
+}
+button:focus, button:active {
+  @apply outline-none;
 }
 .marquee {
   overflow: hidden;
@@ -129,4 +294,26 @@
 .marquee:hover span {
   width: 100%;
   transform: translateX(-50%);
+}
+
+/* ==========================
+Load in animation
+========================== */
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: translateY(0) scaleX(1);
+  }
+}
+@keyframes slideFromtop {
+  100% {
+
+  }
+}
+body > .main .header, body > .main section {
+  opacity: 0;
+  transform: translateY(15px) scaleX(.95);
+}
+body.loaded > .main .header, body.loaded > .main section {
+  animation: fadeIn 600ms ease-out 0s forwards;
 }
