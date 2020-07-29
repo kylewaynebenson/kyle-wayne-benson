@@ -22,7 +22,7 @@
   <div id="main" class="main relative flex-grow max-w-full">
     <nav class="top-nav relative overflow-hidden">
       <div class="container flex flex-wrap items-center sm:flex-no-wrap p-6 sm:px-0 xl:px-32 mx-auto z-10 w-full absolute left-0 right-0 top-0">
-        <a href="{{ site.baseurl }}" class="flex-grow">
+        <a href="{{ "/" | relative_url }}" class="flex-grow">
           <img class="mx-auto sm:mx-0" width="205" height="auto" src="{{ '/images/' | relative_url }}/squiggles/logo.gif">
         </a>
         {% if page.title != "home" %}
