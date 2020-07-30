@@ -30,26 +30,26 @@ title: No Context Kyle
             {% elsif image.path contains '.webm' %}
             <li class="w-1/2 sm:w-1/3 xl:w-1/4 xxl:w-2/12 p-2 sm:p-3 md:p-4 lg:p-6">
                 <video class="max-w-full rounded-lg" autoplay="autoplay" loop>
-                  <source src="{{ image.path }}" type="video/webm">
+                  <source  src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ image.path }}" type="video/webm">
                 </video>
             </li>
             {% elsif image.path contains '-fw.' %}
               <li class="w-full xl:w-11/12 xxl:w-10/12 p-2 sm:p-3 md:p-4 lg:p-6 zoom-{{ mod }}">
-                  <img class="rounded-lg" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
+                  <img class="rounded-lg"  src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
               </li>
 
             {% elsif image.path contains '-ls.' %}
               <li class="w-1/2 sm:w-2/3 xl:w-1/2 xxl:w-4/12 p-2 sm:p-3 md:p-4 lg:p-6 zoom-{{ mod }}">
-                  <img class="rounded-lg" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
+                  <img class="rounded-lg"  src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
               </li>
 
               {% elsif image.path contains '-sq.' %}
                 <li class="w-1/2 sm:w-1/3 xl:w-1/4 xxl:w-2/12 p-2 sm:p-3 md:p-4 lg:p-6 wiggle zoom-{{ mod }}">
-                    <img class="rounded-lg w-full" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
+                    <img class="rounded-lg w-full"  src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
                 </li>
             {% else %}
               <li class="w-1/2 sm:w-1/3 xl:w-1/4 xxl:w-2/12 p-2 sm:p-3 md:p-4 lg:p-6 zoom-{{ mod }}">
-                  <img class="rounded-lg w-full" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
+                  <img class="rounded-lg w-full"  src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path }}" />
               </li>
             {% endif %}
           {% endif %}

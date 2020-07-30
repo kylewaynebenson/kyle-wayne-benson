@@ -295,25 +295,3 @@ button:focus, button:active {
   width: 100%;
   transform: translateX(-50%);
 }
-
-/* ==========================
-Load in animation
-========================== */
-@keyframes fadeIn {
-  100% {
-    opacity: 1;
-    transform: translateY(0) scaleX(1);
-  }
-}
-@keyframes slideFromtop {
-  100% {
-
-  }
-}
-body > .main .header, body > .main section {
-  opacity: 0;
-  transform: translateY(15px) scaleX(.95);
-}
-body.loaded > .main .header, body.loaded > .main section {
-  animation: fadeIn 600ms ease-out 0s forwards;
-}
