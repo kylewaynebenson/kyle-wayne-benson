@@ -2,6 +2,7 @@ title: Kyle Wayne Benson
 description: Art director, type designer and illustrator in Sunny Oakland California
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.kylewaynebenson.com" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: pretty
 
 #Links within the site
 documentation: "https://lyft.github.io/amundsen/"
