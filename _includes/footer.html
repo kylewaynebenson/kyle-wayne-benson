@@ -1,28 +1,38 @@
-<footer class="bg-green font-body pt-24 -mt-32">
+<footer class="bg-green font-body pt-32 -mt-32">
   <div class="container">
-    <div class="flex items-center justify-center sm:flex-no-wrap p-8 sm:p-16 md:p-20 lg:p-24 text-white">
-      <div class="w-half flex-grow">
+    <div class="flex flex-wrap items-top justify-center text-white">
+      <div class="w-full md:w-1/2 lg:w-1/3 text-center md:text-left mb-10">
         <img width="100px" height="auto" src="{{ '/images/' | relative_url }}squiggles/kyle.png"/>
-        <a class="bg-black rounded-full whitespace-no-wrap px-20 py-12 subhead" href="mailto:{{site.email}}">Email me</a>
+        <a class="bg-black rounded-full whitespace-no-wrap px-20 py-12 subhead tiny-cloud" href="mailto:{{site.email}}">Email me</a>
       </div>
-      <div class="w-half">
-        <div class="caption mb-5">Colophon:</div>
-        <a class="bg-orange block flex items-center rounded-lg mb-4" href="http://www.futurefonts.xyz/verycoolstudio">
-          <div class="bg-pink font-talmage font-regular rounded-tl-lg rounded-bl-lg text-3xl w-16 text-center p-2">
-            Aa
+      <div class="w-full md:w-1/2 lg:w-2/3 lg:flex">
+        <div class="lg:w-7/12">
+          <div class="caption mb-5">Colophon:</div>
+          <div class="body mb-3">
+            Copywriting help from Emily Brown. Illustrations and animations made in Procreate. Built using Jekyll, tailwind.css, and hosted on github pages. Anything admired on this website is thanks to my friends, whom I love.
           </div>
-          <div class="font-geordi font-regular text-1xl py-2 px-6">
-            VC Talmage, via <strong>FutureFonts.xyz</strong>.
+          <div class="body mb-10">
+            <span class="caption uppercase">©Friends of Kyle Wayne Benson 2020</span> or whatever.
           </div>
-        </a>
-        <a class="bg-orange block flex items-center rounded-lg mb-4" href="http://www.futurefonts.xyz/verycoolstudio">
-          <div class="bg-pink font-geordi font-bold rounded-tl-lg rounded-bl-lg text-3xl w-16 text-center p-2">
-            Aa
-          </div>
-          <div class="font-geordi font-regular text-1xl py-2 px-6">
-            VC Geordi, not yet released.
-          </div>
-        </a>
+        </div>
+        <div class="lg:w-5/12 lg:pl-10">
+          <a class="bg-orange block flex items-center rounded-lg mb-4" href="http://www.futurefonts.xyz/verycoolstudio">
+            <div class="bg-pink font-talmage font-regular rounded-tl-lg rounded-bl-lg text-3xl w-16 text-center p-2">
+              Aa
+            </div>
+            <div class="font-geordi font-regular text-1xl py-2 px-6">
+              VC Talmage <span class="caption uppercase">unreleased</span>
+            </div>
+          </a>
+          <a class="bg-orange block flex items-center rounded-lg mb-4" href="http://www.futurefonts.xyz/verycoolstudio">
+            <div class="bg-pink font-geordi font-bold rounded-tl-lg rounded-bl-lg text-3xl w-16 text-center p-2">
+              Aa
+            </div>
+            <div class="font-geordi font-regular text-1xl py-2 px-6">
+              VC Geordi <span class="caption uppercase">unreleased</span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div><!--/container-->

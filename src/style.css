@@ -156,6 +156,14 @@
 .mega {
   @apply font-talmage font-bold text-8xl leading-none;
 }
+.horizontal-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hanging-quote {
+  hanging-punctuation: first;
+}
 .image {
   @apply border-2 border-black rounded-tl-lg rounded-tr-lg;
   box-shadow: 5px 5px 0px theme('colors.black');
@@ -198,6 +206,26 @@
 }
 .eyes:hover:before {
     opacity: 1;
+}
+.tiny-cloud {
+  position: relative;
+}
+.tiny-cloud:before {
+  position: absolute;
+  content: ''; /* this is important */
+  height: 220px;
+  width: 220px;
+  left: 50%;
+  top: 50%;
+  transform:translateX(-50%) translateY(-50%);
+  z-index: 2;
+  background: url(../../images/squiggles/tiny-cloud.gif) bottom no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  transition: opacity 600ms ease-in-out;
+}
+.tiny-cloud:hover:before {
+    opacity: 0;
 }
 .glow-small {
   position: relative;
