@@ -14,7 +14,7 @@ import ghPages from "gulp-gh-pages";
 
 const rawStylesheet = "src/style.css";
 const rawJavascript = "src/js.js";
-const siteRoot = "dist";
+const siteRoot = "docs";
 const jsRoot = `${siteRoot}/assets/js/`;
 const cssRoot = `${siteRoot}/assets/css/`;
 const tailwindConfig = "tailwind.config.js";
@@ -57,7 +57,7 @@ task("processStyles", done => {
       gulpif(
         !devBuild,
         new purgecss({
-          content: ["dist/**/*.html"],
+          content: ["docs/**/*.html"],
           extractors: [
             {
               extractor: TailwindExtractor,
@@ -97,7 +97,7 @@ task("startServer", () => {
       "**/*.js",
       "**/*.md",
       "**/*.markdown",
-      "!dist/**/*",
+      "!docs/**/*",
       "!node_modules/**/*"
     ],
     { interval: 500 },
@@ -105,7 +105,7 @@ task("startServer", () => {
   );
 });
 
-task('deploy', () => src('./dist/**/*').pipe(ghPages()));
+task('deploy', () => src('./docs/**/*').pipe(ghPages()));
 
 const buildSite = series("buildJekyll", "processJavascript", "processStyles");
 

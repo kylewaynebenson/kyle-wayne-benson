@@ -8,7 +8,7 @@ permalink: pretty
 documentation: "https://lyft.github.io/amundsen/"
 getstarted: "https://github.com/lyft/amundsen"
 email: "hello@verycoolstudio.com"
-destination: dist
+destination: docs
 
 #People Links
 KellyCarpenter: "https://dribbble.com/thecarpenter"
