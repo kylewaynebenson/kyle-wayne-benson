@@ -12,13 +12,13 @@ theme: white
               {% if post.image != ".webm" %}
                 <img class="w-64 mx-auto mb-5 md:w-auto max-w-full md:mb-10" src="{{ '/images/' | relative_url }}{{ post.title | slugify }}/thumbnail{{post.image}}">
               {% else %}
-                <video class="w-64 mx-auto mb-5 md:w-auto max-w-full md:mb-10" autoplay="autoplay" loop>
+                <video class="w-64 mx-auto mb-5 md:w-auto max-w-full md:mb-10 rounded-lg" autoplay="autoplay" loop>
                   <source src="{{ '/images/' | relative_url }}{{ post.title | slugify }}/thumbnail{{post.image}}" type="video/webm">
                   <source src="{{ '/images/' | relative_url }}{{ post.title | slugify }}/thumbnail.mp4" type="video/mp4">
                 </video>
               {% endif %}
             {% endif %}
-            <div class="font-talmage font-regular text-3xl leading-none mb-1 lg:mb-2">{{post.title}}</div>
+            <div class="font-talmage font-regular text-3xl md:text-4xl lg:text-5xl leading-none mb-1 lg:mb-2">{{post.title}}</div>
             <!--{% if post.tags != "unknown" %}
             <ul>
               {% for tag in post.tags %}

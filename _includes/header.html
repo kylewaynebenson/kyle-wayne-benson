@@ -21,18 +21,19 @@
   {% endif %}
   <div id="main" class="main relative flex-grow max-w-full overflow-x-hidden">
     <nav class="top-nav relative overflow-hidden">
-      <div class="container flex flex-wrap justify-center md:justify-start items-center p-6 xl:px-32 mx-auto z-10 w-full absolute left-0 right-0 top-0">
-        <a href="{{ "/" | relative_url }}" class="w-full sm:w-auto flex-grow">
-          <img class="mx-auto sm:mx-0" width="205" height="auto" src="{{ '/images/' | relative_url }}/squiggles/logo.gif">
+      <div class="container flex flex-wrap justify-between md:justify-start items-center p-6 px-16 md:px-6 xl:px-32 mx-auto z-10 w-full absolute left-0 right-0 top-0">
+        <a href="{{ "/" | relative_url }}" class="w-full sm:w-auto grow">
+            <img class="mx-auto sm:mx-0" width="205" height="auto" src="{{ '/images/' | relative_url }}/squiggles/logo.gif">
         </a>
+        <div class="flex-grow"></div>
         {% if page.title != "home" %}
         <button class="glow-small mr-10 outline-none hidden md:block" onclick="sideNav()">Work</button>
         {% endif %}
         {% if page.title != "No Context Kyle" %}
-        <a href="{% link no-context-kyle.html %}" class="glow-small mr-10">No Context</a>
+        <a href="{% link no-context-kyle.html %}" class="glow-small mr-10">No context</a>
         {% endif %}
         <div class="flex justify-center items-center">
-          <div class="body eyes mr-4"><a class="squiggle" href="https://verycool.studio/">Fonts? <span class="font-bold">Very Cool</span></a></div>
+          <div class="body eyes mr-4"><a class="squiggle" href="https://verycool.studio/">Very Cool Studio</a></div>
         </div>
       </div><!-- Container -->
       <!-- Colored Band! -->

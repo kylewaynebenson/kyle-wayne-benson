@@ -2,34 +2,40 @@
   <div class="container">
     <div class="flex flex-wrap items-top justify-center text-white">
       <div class="w-full md:w-1/2 lg:w-1/3 text-center md:text-left mb-10">
+        {% include relatedposts.html %}
         <img width="100px" height="auto" src="{{ '/images/' | relative_url }}squiggles/kyle.png"/>
         <a class="bg-black rounded-full whitespace-no-wrap px-16 py-8 subhead tiny-cloud" href="mailto:{{site.email}}">Email me</a>
       </div>
       <div class="w-full md:w-1/2 lg:w-2/3 lg:flex">
         <div class="lg:w-7/12">
-          <div class="caption mb-5">Colophon:</div>
-          <div class="body mb-3">
-            Copywriting help from Emily Brown. Illustrations and animations made in Procreate. Built using Jekyll, tailwind.css, and hosted on github pages. Anything admired on this website is thanks to my friends, whom I love.
-          </div>
+          <div class="font-bold mb-5">Colophon</div>
           <div class="body mb-10">
-            <span class="caption uppercase">©Friends of Kyle Wayne Benson 2020</span> or whatever.
+            Copywriting help from Emily Brown. Illustrations and animations made in Procreate. Built using Jekyll, tailwind.css, and hosted on github pages. Anything admired on this website is thanks to my friends, whom I love. ©Friends of Kyle Wayne Benson 2020 or whatever.
+          </div>
+          <div>
+            <div class="font-bold mb-5">Other places online</div>
+            <a href="https://twitter.com/kylewaynebenson/status/1148109469823356928?s=20" class="inline-block bg-stars text-black rounded-full grow px-4 py-2 mb-2 caption uppercase">Twitter</a>
+            <a href="https://www.instagram.com/verycoolstudio/" class="inline-block bg-check text-black rounded-full grow px-4 py-2 mb-2 caption uppercase">Instagram</a>
+            <a href="https://www.verycoolstudio.com/" class="inline-block bg-purple rounded-full grow px-4 py-2 mb-2 caption uppercase">Very Cool Studio</a>
+            <a href="https://www.songclubrecords.com/" class="inline-block bg-pink rounded-full grow px-4 py-2 mb-2 caption uppercase">Song Club Records</a>
           </div>
         </div>
         <div class="lg:w-5/12 lg:pl-10">
-          <a class="bg-orange block flex items-center rounded-lg mb-4" href="http://www.futurefonts.xyz/verycoolstudio">
+          <div class="font-bold mb-5">Fonts</div>
+          <a class="bg-orange block flex items-center rounded-lg grow mb-4" href="http://www.futurefonts.xyz/verycoolstudio">
             <div class="bg-pink font-talmage font-regular rounded-tl-lg rounded-bl-lg text-3xl w-16 text-center p-2">
               Aa
             </div>
             <div class="font-geordi font-regular text-1xl py-2 px-6">
-              VC Talmage <span class="caption uppercase">unreleased</span>
+              VC Talmage <span class="caption uppercase">unreleased :(</span>
             </div>
           </a>
-          <a class="bg-orange block flex items-center rounded-lg mb-4" href="http://www.futurefonts.xyz/verycoolstudio">
+          <a class="bg-orange block flex items-center rounded-lg grow mb-4" href="http://www.futurefonts.xyz/verycoolstudio">
             <div class="bg-pink font-geordi font-bold rounded-tl-lg rounded-bl-lg text-3xl w-16 text-center p-2">
               Aa
             </div>
             <div class="font-geordi font-regular text-1xl py-2 px-6">
-              VC Geordi <span class="caption uppercase">unreleased</span>
+              VC Geordi <span class="caption uppercase">unreleased :(</span>
             </div>
           </a>
         </div>

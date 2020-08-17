@@ -137,6 +137,12 @@
 .bg-check {
   background: url(../../images/backgrounds/check.png) repeat;
 }
+.bg-buildingintercompurple {
+  background: #e52aff;
+}
+.bg-buildingintercomyellow {
+  background: #f9ff87;
+}
 .body {
   @apply font-geordi text-md font-medium tracking-wide;
 }
@@ -267,6 +273,13 @@
 .glow:before {
  transform:scaleX(-1);
  right: -90px;
+}
+.grow {
+  transition: all 250ms ease-in-out;
+  transform-origin: center;
+}
+.grow:hover {
+  transform: scaleY(1.09) scaleX(1.02);
 }
 .squiggle {
   position: relative;
