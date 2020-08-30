@@ -1,8 +1,8 @@
-<div class="mb-5">
+<div class="mb-5 md:mb-10 text-center">
 
-<div class="font-bold mb-5">Similar case studies</div>
-
-{% assign maxRelated = 4 %}
+<div class="caption uppercase mb-5">See more</div>
+  <div class="flex justify-center">
+{% assign maxRelated = 2 %}
 {% assign minCommonTags =  1 %}
 {% assign maxRelatedCounter = 0 %}
 
@@ -22,9 +22,21 @@
     {% endfor %}
 
     {% if sameTagCount >= minCommonTags %}
-      <div class="body">
-        <a class="squiggle" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </div>
+      <a style="max-width: 300px;" class="w-full md:w-1/2 block grow" href="{{ site.baseurl }}{{ post.url }}">
+        <div class="rounded-lg bg-white text-black px-4 py-3 m-2 border-2 border-black">
+            <div class="font-talmage font-regular text-3xl text-left leading-none {% if post.title.size > 19 %}marquee max-w-full{% endif %}"><span>{{post.title}}</span></div>
+            {% if post.tags != "unknown" %}
+            {% endif %}
+            <div class="flex leading-none pt-1">
+              {% if post.year != "unknown" %}
+              <div class="caption flex-grow text-left">{{post.client}}</div>
+              {% endif %}
+              {% if post.client != "unknown" %}
+              <div class="caption">{{post.year}}</div>
+              {% endif %}
+            </div>
+        </div>
+      </a>
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
         {% break %}
@@ -32,5 +44,5 @@
     {% endif %}
 
   {% endfor %}
-
+  </div>
 </div>

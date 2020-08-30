@@ -2,11 +2,11 @@
   <ul>
   {% for post in site.work %}
     <a href="{{ post.url }}">
-      <li class="rounded-lg bg-gray-200 text-black px-4 py-3 m-2 border-1 border-gray-300 border-b-2">
-          <div class="font-talmage font-regular text-3xl text-left leading-none {% if post.title.size > 19 %}marquee max-w-full{% endif %}"><span>{{post.title}}</span></div>
+      <li class="grow rounded-lg bg-gray-300 text-black px-4 py-3 m-2">
+          <div class="font-talmage font-regular text-3xl text-left leading-none"><span>{{post.title}}</span></div>
           {% if post.tags != "unknown" %}
           {% endif %}
-          <div class="flex">
+          <div class="flex leading-none pt-1">
             {% if post.year != "unknown" %}
             <div class="caption flex-grow">{{post.client}}</div>
             {% endif %}
@@ -18,7 +18,7 @@
     </a>
   {% endfor %}
     <a href="{% link no-context-kyle.html %}">
-      <li class="font-body text-center rounded-full bg-black text-white px-4 py-3 m-2">
+      <li class="grow font-body text-center rounded-full bg-black text-white px-4 py-3 m-2">
         <svg class="inline-block" width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.57136 6H6.4285V4.0714C6.4285 3.00628 5.56505 2.14283 4.49993 2.14283C3.43481 2.14283 2.57136 3.00628 2.57136 4.0714V6ZM1.28564 6C0.575596 6.00004 0 6.57566 0 7.28571V11.7143C0 12.4244 0.575634 13 1.28571 13H7.71429C8.42437 13 9 12.4244 9 11.7143V7.28571C9 6.57563 8.42437 6 7.71429 6H7.71422V4.0714C7.71422 2.2962 6.27513 0.857117 4.49993 0.857117C2.72473 0.857117 1.28564 2.2962 1.28564 4.0714V6Z" fill="white"/>
         </svg>
