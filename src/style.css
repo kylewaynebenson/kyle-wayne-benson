@@ -1,20 +1,17 @@
 @font-face {
-  font-family: 'VC Talmage ExtraCondensed';
+  font-family: 'VC Gosh ExtraCondensed';
   font-weight: 400;
-  src: url('../../fonts/TalmageExtraCondensed-Regular.woff2') format('woff2'),
-    url('../../fonts/TalmageExtraCondensed-Regular.woff') format('woff');
+  src: url('../../fonts/VCGosh-ExtraCondensedBold.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'VC Talmage ExtraCondensed';
+  font-family: 'VC Gosh ExtraCondensed';
   font-weight: 600;
-  src: url('../../fonts/TalmageExtraCondensed-Semibold.woff2') format('woff2'),
-    url('../../fonts/TalmageExtraCondensed-Semibold.woff') format('woff');
+  src: url('../../fonts/VCGosh-CondensedBold.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'VC Talmage ExtraCondensed';
+  font-family: 'VC Gosh ExtraCondensed';
   font-weight: 700;
-  src: url('../../fonts/TalmageExtraCondensed-Bold.woff2') format('woff2'),
-    url('../../fonts/TalmageExtraCondensed-Bold.woff') format('woff');
+  src: url('../../fonts/VCGosh-ExtraCondensedExtraBold.woff2') format('woff2');
 }
 @font-face {
   font-family: 'VC Geordi';
@@ -156,11 +153,12 @@
   @apply font-geordi text-2xl font-medium tracking-wide;
 }
 .pullquote {
-  @apply font-talmage text-5xl font-medium;
+  @apply font-gosh text-5xl font-semibold;
+  text-wrap: balance;
   line-height: 1.1;
 }
 .mega {
-  @apply font-talmage font-bold text-8xl leading-none;
+  @apply font-gosh font-bold text-8xl leading-none;
 }
 .horizontal-center {
   position: relative;
@@ -188,6 +186,16 @@
 .bg-stars {
   background: theme('colors.periwinkle') url(../../images/backgrounds/stars.png);
   background-size: 700px;
+  text-shadow:
+    1px 0 2px theme('colors.periwinkle'),
+    -1px 0 3px theme('colors.periwinkle'),
+    0 0 4px theme('colors.periwinkle'),
+    0 0 8px theme('colors.periwinkle'),
+    0 0 16px theme('colors.periwinkle'),
+    0 0 30px theme('colors.periwinkle');
+}
+.bg-stars [class*="bg-"] {
+  text-shadow: none;
 }
 .bg-terrazzo {
   background: theme('colors.white') url(../../images/backgrounds/terrazzo.png);
@@ -310,7 +318,7 @@
   width: 100%;
   transition: width 500ms ease-in-out, opacity 2s ease-in-out;
 }
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   #sideNav.active {
         width: 300px;
   }
@@ -324,6 +332,28 @@ button:focus, button:active {
 .marquee {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.marquee-image {
+  overflow: hidden;
+  max-height: 12rem;
+}
+.marquee-image-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 60s linear infinite;
+}
+.marquee-image-track img {
+  display: block;
+  height: 12rem;
+  width: auto;
+  flex-shrink: 0;
+}
+.marquee-image:hover .marquee-image-track {
+  animation-play-state: paused;
+}
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 .marquee span {
     display: inline-block;

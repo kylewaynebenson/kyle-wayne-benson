@@ -4,10 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  {% assign meta_description = page.summary | default: site.description | strip_html | normalize_whitespace %}
   <title>{{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if meta_description != '' %}
+  <meta name="description" content="{{ meta_description }}">
+  <meta property="og:description" content="{{ meta_description }}">
+  {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/' | relative_url }}style.css?{{site.time | date: '%s%N'}}">
   <script type="text/javascript" src="{{ '/assets/js/' | relative_url }}js.js?{{site.time | date: '%s%N'}}"></script>
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.7/dist/dotlottie-wc.js" type="module"></script>
   <link rel="icon" type="image/png" href="{{ '/images/' | relative_url }}squiggles/favicon.png"/>
   <meta property="og:image" content="{{ '/images/' | relative_url }}share-image.png">
   <meta property="og:image:type" content="image/png">

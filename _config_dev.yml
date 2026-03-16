@@ -17,7 +17,6 @@ CarlyWright: "https://www.instagram.com/carknowsdatswright/"
 collections:
   work:
     output: true
-    sort_by: order
 
 exclude:
   - Gemfile

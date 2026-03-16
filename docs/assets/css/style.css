@@ -1,28 +1,25 @@
 @font-face {
-  font-family: 'VC Talmage ExtraCondensed';
+  font-family: 'VC Gosh ExtraCondensed';
 
   font-weight: 400;
 
-  src: url('../../fonts/TalmageExtraCondensed-Regular.woff2') format('woff2'),
-    url('../../fonts/TalmageExtraCondensed-Regular.woff') format('woff');
+  src: url('../../fonts/VCGosh-ExtraCondensedBold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'VC Talmage ExtraCondensed';
+  font-family: 'VC Gosh ExtraCondensed';
 
   font-weight: 600;
 
-  src: url('../../fonts/TalmageExtraCondensed-Semibold.woff2') format('woff2'),
-    url('../../fonts/TalmageExtraCondensed-Semibold.woff') format('woff');
+  src: url('../../fonts/VCGosh-CondensedBold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'VC Talmage ExtraCondensed';
+  font-family: 'VC Gosh ExtraCondensed';
 
   font-weight: 700;
 
-  src: url('../../fonts/TalmageExtraCondensed-Bold.woff2') format('woff2'),
-    url('../../fonts/TalmageExtraCondensed-Bold.woff') format('woff');
+  src: url('../../fonts/VCGosh-ExtraCondensedExtraBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -1910,8 +1907,8 @@ video {
   font-family: VC Geordi, sans-serif;
 }
 
-.font-talmage {
-  font-family: VC Talmage ExtraCondensed, serif;
+.font-gosh {
+  font-family: VC Gosh ExtraCondensed, serif;
 }
 
 .font-hairline {
@@ -5363,14 +5360,15 @@ video {
 }
 
 .pullquote {
-  font-family: VC Talmage ExtraCondensed, serif;
+  font-family: VC Gosh ExtraCondensed, serif;
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
+  text-wrap: balance;
   line-height: 1.1;
 }
 
 .mega {
-  font-family: VC Talmage ExtraCondensed, serif;
+  font-family: VC Gosh ExtraCondensed, serif;
   font-weight: 700;
   font-size: 6rem;
   line-height: 1;
@@ -5410,6 +5408,17 @@ video {
 .bg-stars {
   background: #7798F8 url(../../images/backgrounds/stars.png);
   background-size: 700px;
+  text-shadow:
+    1px 0 2px #7798F8,
+    -1px 0 3px #7798F8,
+    0 0 4px #7798F8,
+    0 0 8px #7798F8,
+    0 0 16px #7798F8,
+    0 0 30px #7798F8;
+}
+
+.bg-stars [class*="bg-"] {
+  text-shadow: none;
 }
 
 .bg-terrazzo {
@@ -5553,7 +5562,7 @@ video {
   transition: width 500ms ease-in-out, opacity 2s ease-in-out;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   #sideNav.active {
     width: 300px;
   }
@@ -5570,6 +5579,36 @@ button:focus, button:active {
 .marquee {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.marquee-image {
+  overflow: hidden;
+  max-height: 12rem;
+}
+
+.marquee-image-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 60s linear infinite;
+}
+
+.marquee-image-track img {
+  display: block;
+  height: 12rem;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.marquee-image:hover .marquee-image-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0);
+  }
+
+  100% { transform: translateX(-50%);
+  }
 }
 
 .marquee span {
@@ -6814,8 +6853,8 @@ button:focus, button:active {
     font-family: VC Geordi, sans-serif;
   }
 
-  .sm\:font-talmage {
-    font-family: VC Talmage ExtraCondensed, serif;
+  .sm\:font-gosh {
+    font-family: VC Gosh ExtraCondensed, serif;
   }
 
   .sm\:font-hairline {
@@ -11332,8 +11371,8 @@ button:focus, button:active {
     font-family: VC Geordi, sans-serif;
   }
 
-  .md\:font-talmage {
-    font-family: VC Talmage ExtraCondensed, serif;
+  .md\:font-gosh {
+    font-family: VC Gosh ExtraCondensed, serif;
   }
 
   .md\:font-hairline {
@@ -15850,8 +15889,8 @@ button:focus, button:active {
     font-family: VC Geordi, sans-serif;
   }
 
-  .lg\:font-talmage {
-    font-family: VC Talmage ExtraCondensed, serif;
+  .lg\:font-gosh {
+    font-family: VC Gosh ExtraCondensed, serif;
   }
 
   .lg\:font-hairline {
@@ -20368,8 +20407,8 @@ button:focus, button:active {
     font-family: VC Geordi, sans-serif;
   }
 
-  .xl\:font-talmage {
-    font-family: VC Talmage ExtraCondensed, serif;
+  .xl\:font-gosh {
+    font-family: VC Gosh ExtraCondensed, serif;
   }
 
   .xl\:font-hairline {
@@ -24886,8 +24925,8 @@ button:focus, button:active {
     font-family: VC Geordi, sans-serif;
   }
 
-  .xxl\:font-talmage {
-    font-family: VC Talmage ExtraCondensed, serif;
+  .xxl\:font-gosh {
+    font-family: VC Gosh ExtraCondensed, serif;
   }
 
   .xxl\:font-hairline {
@@ -29404,8 +29443,8 @@ button:focus, button:active {
     font-family: VC Geordi, sans-serif;
   }
 
-  .xxxl\:font-talmage {
-    font-family: VC Talmage ExtraCondensed, serif;
+  .xxxl\:font-gosh {
+    font-family: VC Gosh ExtraCondensed, serif;
   }
 
   .xxxl\:font-hairline {
@@ -33922,8 +33961,8 @@ button:focus, button:active {
     font-family: VC Geordi, sans-serif;
   }
 
-  .xxxxl\:font-talmage {
-    font-family: VC Talmage ExtraCondensed, serif;
+  .xxxxl\:font-gosh {
+    font-family: VC Gosh ExtraCondensed, serif;
   }
 
   .xxxxl\:font-hairline {

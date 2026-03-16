@@ -41,7 +41,7 @@ module.exports = {
     }),
     fontFamily: {
       geordi: ['VC Geordi', 'sans-serif'],
-      talmage: ['VC Talmage ExtraCondensed', 'serif'],
+      gosh: ['VC Gosh ExtraCondensed', 'serif'],
     },
     extend: {
       colors: {

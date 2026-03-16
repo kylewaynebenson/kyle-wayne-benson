@@ -22,7 +22,6 @@ JasonYim: "http://www.jason-yim.com/"
 collections:
   work:
     output: true
-    sort_by: order
 
 exclude:
   - Gemfile

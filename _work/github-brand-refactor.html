@@ -1,0 +1,64 @@
+---
+layout: work
+title: GitHub Brand Refactor
+tags: ['icons', 'type design', 'brand systems', 'layout']
+year: "2026"
+client: GitHub
+image: .webm
+theme: black
+summary: >-
+  GitHub has a schedule of annual refreshes. These help the brand stay culturally relevant while keeping aligned as business initiatives change. A cohesive brand experience is only possible through regularly auditing and improving. For the 2026 refresh we evolved some of the foundational primitives: color, logo, type, and layout.
+contributions:
+  - icons
+  - type design
+  - brand systems
+  - layout
+collaborators:
+  - name: Eleena Bakrie
+    role: illustration, art direction
+  - name: Brooks Chambers
+    role: creative direction
+  - name: Marcus Bakke
+    role: illustration, animation
+header:
+  variant: image
+  align: center
+  class: text-white
+  content_class: relative z-10
+---
+{% include work-header.html %}
+
+{% include hr-squiggle.html top='block' bottom='white' spacing='tight' %}
+
+<section class="bg-white">
+  <div class="container xl:px-32 py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
+    <div class="caption uppercase text-center mb-5">Design</div>
+    <div class="subhead text-center mx-auto lg:w-2/3 mb-16">The refactor wasn’t about inventing a one-off campaign look. It was about improving our quality defaults. And there's no bigger default than the logo—arguably the most known in developer tech.</div>
+    <div id="logo-scrub" class="relative md:flex md:justify-between items-center mb-16 mx-auto">
+        <div id="logo-left" class="md:w-5/12" style="transition: opacity 1.3s ease;">
+            <img class="w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="Old GitHub logo" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/logo-old.svg">
+            <div class="caption text-center mt-5">Old (2015-2025)</div>
+        </div>
+        <div id="logo-lottie" class="absolute md:w-5/12" style="pointer-events: none; z-index: 10; opacity: 0; transition: opacity 0.4s ease;">
+            <dotlottie-wc id="logo-player" src="{{ '/images/' | relative_url }}github-brand-refactor/logo.lottie" style="width: 100%; height: 100%; display: block;"></dotlottie-wc>
+        </div>
+        <div id="logo-right" class="md:w-5/12 glow" style="transition: opacity 1.3s ease;">
+            <img class="w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="New GitHub logo" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/logo-new.svg">
+            <div class="caption text-center mt-5">New (2026+)</div>
+        </div>
+    </div>
+    <div class="w-full md:w-2/3 lg:w-1/2 md:mx-auto lg:text-center">
+      <div class="body mb-5">
+        <p>Mona's head gets a little more circular, less boxy. The curves are slightly less tense, and a smaller tentacle helps with overall mark symmetry. The vectors transition better. A subtle curve inflection and slightly bigger arm support a more tail-like feeling, and the shoulder better matches the softness of Mona's right side.</p>
+      </div>
+    </div>
+  </div><!--container-->
+  <div class="marquee-image"><!-- marquee image-->
+    <div class="marquee-image-track">
+        <img src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/logo-guidelines.png">
+    </div>
+  </div>
+  <div class="container xl:px-32 py-10 md:py-16 lg:py-24 mx-auto">
+    {% include relatedposts.html %}
+  </div> 
+</section>

@@ -1,6 +1,7 @@
 <nav class="hidden sm:block md:sticky top-0 h-screen overflow-y-scroll min-h-full bg-white border-r-2 border-black" id="sideNav" >
   <ul>
-  {% for post in site.work %}
+  {% assign sorted_work = site.work | sort: "year" | reverse %}
+  {% for post in sorted_work %}
     <a href="{{ post.url }}">
       <li class="grow rounded-lg bg-gray-300 text-black px-4 py-3 m-2">
           <div class="font-talmage font-regular text-3xl text-left leading-none"><span>{{post.title}}</span></div>
