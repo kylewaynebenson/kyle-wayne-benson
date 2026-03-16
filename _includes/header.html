@@ -31,15 +31,16 @@
         <a href="{{ "/" | relative_url }}" class="w-full sm:w-auto grow">
             <img class="mx-auto sm:mx-0" width="205" height="auto" src="{{ '/images/' | relative_url }}/squiggles/logo.gif">
         </a>
-        <div class="flex-grow"></div>
-        {% if page.title != "home" %}
-        <button class="glow-small mr-10 outline-none hidden md:block" onclick="sideNav()">Work</button>
-        {% endif %}
-        {% if page.title != "No Context Kyle" %}
-        <a href="{% link no-context-kyle.html %}" class="glow-small mr-10">No context</a>
-        {% endif %}
-        <div class="flex justify-center items-center">
+        <div class="hidden md:flex md:flex-grow md:justify-end">
+          {% if page.title != "home" %}
+          <button class="glow-small mr-10 outline-none hidden md:block" onclick="sideNav()">Work</button>
+          {% endif %}
+          {% if page.title != "No Context Kyle" %}
+          <a href="{% link no-context-kyle.html %}" class="glow-small mr-10">No context Kyle</a>
+          {% endif %}
+          {% if page.title == "home" %}
           <div class="body eyes mr-4"><a class="squiggle" href="https://verycool.studio/">Very Cool Studio</a></div>
+          {% endif %}
         </div>
       </div><!-- Container -->
       <!-- Colored Band! -->

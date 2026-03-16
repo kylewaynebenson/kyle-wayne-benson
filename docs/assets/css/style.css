@@ -5555,6 +5555,7 @@ video {
 #sideNav {
   transition: width 500ms ease-in-out;
   width: 0px;
+  border: 0px;
 }
 
 #main {
@@ -5562,14 +5563,13 @@ video {
   transition: width 500ms ease-in-out, opacity 2s ease-in-out;
 }
 
-@media (min-width: 1024px) {
-  #sideNav.active {
-    width: 300px;
-  }
+#sideNav.active {
+  width: 300px;
+  border-right: 2px solid black;
+}
 
-  #main.active {
-    width: calc(100% - 300px);
-  }
+#main.active {
+  width: calc(100% - 300px);
 }
 
 button:focus, button:active {
