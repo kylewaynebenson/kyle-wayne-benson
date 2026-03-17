@@ -14,7 +14,7 @@ theme: white
                 {% if post.image != ".webm" %}
                   <img style="height:auto !important;" class="w-full mx-auto mb-5 md:h-64 md:mb-10" src="{{ '/images/' | relative_url }}{{ post.title | slugify }}/thumbnail{{post.image}}">
                 {% else %}
-                  <video style="height:auto !important;" class="w-full mx-auto mb-5 md:h-64 md:mb-10 rounded-lg" autoplay="autoplay" loop>
+                  <video style="height:auto !important;" class="w-full mx-auto mb-5 md:h-64 md:mb-10 rounded-lg" autoplay muted playsinline loop>
                     <source src="{{ '/images/' | relative_url }}{{ post.title | slugify }}/thumbnail{{post.image}}" type="video/webm">
                     <source src="{{ '/images/' | relative_url }}{{ post.title | slugify }}/thumbnail.mp4" type="video/mp4">
                   </video>

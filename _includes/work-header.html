@@ -22,7 +22,7 @@
           </svg>
           <div class="inline-block caption text-white leading-none py-3">{{ header.link_label | default: header.link_url }}</div>
         </div>
-        <video class="{{ header.media_class | default: 'inline-block max-w-full' }}" autoplay="autoplay" loop>
+        <video class="{{ header.media_class | default: 'inline-block max-w-full' }}" autoplay muted playsinline loop>
           <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/{{ header.video_basename | default: 'hero' }}.mp4" type="video/mp4">
           <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/{{ header.video_basename | default: 'hero' }}.webm" type="video/webm">
         </video>

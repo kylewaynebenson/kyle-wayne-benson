@@ -22,13 +22,13 @@ title: No Context Kyle
           {% if image.path contains 'images/no-context-kyle' %}
             {% if image.path contains '-ls.webm' %}
             <li class="w-1/2 sm:w-2/3 xl:w-1/2 xxl:w-4/12 p-2 sm:p-3 md:p-4 lg:p-6 zoom-{{ mod }}">
-                <video class="max-w-full rounded-lg" autoplay="autoplay" loop>
+                <video class="max-w-full rounded-lg" autoplay muted playsinline loop>
                   <source src="{{ image.path }}" type="video/webm">
                 </video>
             </li>
             {% elsif image.path contains '.webm' %}
             <li class="w-1/2 sm:w-1/3 xl:w-1/4 xxl:w-2/12 p-2 sm:p-3 md:p-4 lg:p-6">
-                <video class="max-w-full rounded-lg" autoplay="autoplay" loop>
+                <video class="max-w-full rounded-lg" autoplay muted playsinline loop>
                   <source  src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ image.path }}" type="video/webm">
                 </video>
             </li>
