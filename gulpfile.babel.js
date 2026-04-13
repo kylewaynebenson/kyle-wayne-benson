@@ -10,6 +10,8 @@ import sourcemaps from "gulp-sourcemaps";
 import atimport from "postcss-import";
 import tailwindcss from "tailwindcss";
 
+import imagemin from "gulp-imagemin";
+import newer from "gulp-newer";
 import ghPages from "gulp-gh-pages";
 
 const rawStylesheet = "src/style.css";
@@ -77,6 +79,19 @@ task("processJavascript", () => {
   .pipe(dest(jsRoot))
 });
 
+task("processImages", () => {
+  return src("images/**/*.{jpg,jpeg,png,gif,svg}")
+    .pipe(newer(`${siteRoot}/images`))
+    .pipe(
+      imagemin([
+        imagemin.mozjpeg({ quality: 80, progressive: true }),
+        imagemin.optipng({ optimizationLevel: 3 }),
+        imagemin.svgo({ plugins: [{ removeViewBox: false }] })
+      ])
+    )
+    .pipe(dest(`${siteRoot}/images`));
+});
+
 task("startServer", () => {
   browserSync.init({
     files: [siteRoot + "/**"],
@@ -107,7 +122,7 @@ task("startServer", () => {
 
 task('deploy', () => src('./docs/**/*').pipe(ghPages()));
 
-const buildSite = series("buildJekyll", "processJavascript", "processStyles");
+const buildSite = series("buildJekyll", "processImages", "processJavascript", "processStyles");
 
 exports.serve = series(buildSite, "startServer");
 exports.default = series(buildSite);

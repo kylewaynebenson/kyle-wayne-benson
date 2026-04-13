@@ -12,6 +12,8 @@
     "gulp": "^4.0.2",
     "gulp-gh-pages": "^0.5.4",
     "gulp-if": "3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
     "gulp-postcss": "8.0.0",
     "gulp-purgecss": "1.2.0",
     "gulp-sourcemaps": "2.6.5",
