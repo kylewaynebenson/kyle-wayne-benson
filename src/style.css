@@ -100,9 +100,6 @@
 .max-w-1000 {
   max-width: 1000px;
 }
-.text-md {
-  font-size: 1rem;
-}
 .leading-tighter {
   line-height: 1.1;
 }
@@ -124,27 +121,35 @@
   background: #f9ff87;
 }
 .body {
-  @apply font-nudge text-md font-bold tracking-widest;
+  font-size: .875rem;
+}
+@media screen and (min-width: 640px) {
+  .body {
+    font-size: 1rem;
+  }
+}
+.body {
+  @apply font-nudge font-bold tracking-widest;
 }
 .body p {
   @apply mb-5;
 }
 .caption {
-  @apply font-nudge text-md font-bold tracking-widest;
+  @apply font-nudge font-bold tracking-widest;
 }
 .subhead {
-  @apply font-nudge text-md font-bold tracking-widest;
+  @apply font-nudge font-bold tracking-widest;
 }
 .category {
-  @apply font-nudge text-md font-bold tracking-widest italic;
+  @apply font-nudge font-bold tracking-widest italic;
 }
 .pullquote {
-  @apply font-nudge text-md font-bold tracking-widest text-justify;
+  @apply font-nudge font-bold tracking-widest text-justify;
   text-wrap: balance;
   line-height: 1.1;
 }
 .mega {
-  @apply font-nudge font-bold tracking-widest text-md leading-none;
+  @apply font-nudge font-bold tracking-widest leading-none;
 }
 .horizontal-center {
   position: relative;

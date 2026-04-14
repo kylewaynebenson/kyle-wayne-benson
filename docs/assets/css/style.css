@@ -5361,10 +5361,6 @@ video {
   max-width: 1000px;
 }
 
-.text-md {
-  font-size: 1rem;
-}
-
 .leading-tighter {
   line-height: 1.1;
 }
@@ -5392,8 +5388,17 @@ video {
 }
 
 .body {
+  font-size: .875rem;
+}
+
+@media screen and (min-width: 640px) {
+  .body {
+    font-size: 1rem;
+  }
+}
+
+.body {
   font-family: VC Nudge SemiNormal, sans-serif;
-  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
@@ -5404,21 +5409,18 @@ video {
 
 .caption {
   font-family: VC Nudge SemiNormal, sans-serif;
-  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
 
 .subhead {
   font-family: VC Nudge SemiNormal, sans-serif;
-  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
 
 .category {
   font-family: VC Nudge SemiNormal, sans-serif;
-  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   font-style: italic;
@@ -5426,7 +5428,6 @@ video {
 
 .pullquote {
   font-family: VC Nudge SemiNormal, sans-serif;
-  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-align: justify;
@@ -5438,7 +5439,6 @@ video {
   font-family: VC Nudge SemiNormal, sans-serif;
   font-weight: 700;
   letter-spacing: 0.1em;
-  font-size: 1rem;
   line-height: 1;
 }
 
