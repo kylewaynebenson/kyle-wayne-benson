@@ -11,8 +11,8 @@
   <meta name="description" content="Webflow just turned ten. Its style was beginning to lag behind the competition. In an effort to catch up, the internal team put together a two month sprint to refresh the look of the brand and product design. The work was expanded and implemented by every designer at Webflow, the team listed here is just that core sprint group.">
   <meta property="og:description" content="Webflow just turned ten. Its style was beginning to lag behind the competition. In an effort to catch up, the internal team put together a two month sprint to refresh the look of the brand and product design. The work was expanded and implemented by every designer at Webflow, the team listed here is just that core sprint group.">
   
-  <link rel="stylesheet" href="/assets/css/style.css?1776136886805272000">
-  <script type="text/javascript" src="/assets/js/js.js?1776136886805272000"></script>
+  <link rel="stylesheet" href="/assets/css/style.css?1776137458863594000">
+  <script type="text/javascript" src="/assets/js/js.js?1776137458863594000"></script>
   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.7/dist/dotlottie-wc.js" type="module"></script>
   <link rel="icon" type="image/png" href="/images/squiggles/favicon.png"/>
   <meta property="og:image" content="/images/share-image.png">
@@ -86,7 +86,7 @@
   </nav>
 
   <div id="main" class="main relative flex-grow max-w-full overflow-x-hidden">
-    <nav class="top-nav sticky top-0 z-50 bg-lime border-b-2 border-black">
+    <nav class="top-nav sticky top-0 z-50 bg-lime border-b-2 border-black" id="topNav">
       <div class="flex items-center justify-end px-2 py-2 mx-auto">
         <a href="#footer" class="body text-gray-600 mr-6">About</a>
         
@@ -112,7 +112,7 @@
 
 
 <header class="header  text-white">
-  <div class="px-2 py-2 flex flex-col justify-between min-h-screen ">
+  <div class="px-2 py-2 flex flex-col justify-between " style="min-height: calc(100vh - var(--nav-height, 0px));">
 
     <div class="flex-1">
       <!-- Title row -->
@@ -132,7 +132,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/me,-kyle.png" alt="Me, Kyle">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/me,-kyle.png" alt="Me, Kyle" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Me, Kyle</div>
             <div class="body">Principal Brand Designer</div>
@@ -141,7 +141,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/sara-lundberg.png" alt="Sara Lundberg">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/sara-lundberg.png" alt="Sara Lundberg" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Sara Lundberg</div>
             <div class="body">Design Manager</div>
@@ -150,7 +150,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/corey-moen.png" alt="Corey Moen">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/corey-moen.png" alt="Corey Moen" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Corey Moen</div>
             <div class="body">Senior Brand Web Designer</div>
@@ -159,7 +159,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/meg-wayne.png" alt="Meg Wayne">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/meg-wayne.png" alt="Meg Wayne" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Meg Wayne</div>
             <div class="body">Senior Designer</div>
@@ -168,7 +168,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/rese-wynn.png" alt="Rese Wynn">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/rese-wynn.png" alt="Rese Wynn" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Rese Wynn</div>
             <div class="body">Senior Brand Designer</div>
@@ -177,7 +177,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/jason-combs.png" alt="Jason Combs">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/jason-combs.png" alt="Jason Combs" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Jason Combs</div>
             <div class="body">Senior Brand Designer</div>
@@ -186,7 +186,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/pat-szot.png" alt="Pat Szot">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/pat-szot.png" alt="Pat Szot" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Pat Szot</div>
             <div class="body">Senior Brand Designer</div>
@@ -195,7 +195,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/huseyin-gayiran.png" alt="Huseyin Gayiran">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/huseyin-gayiran.png" alt="Huseyin Gayiran" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Huseyin Gayiran</div>
             <div class="body">Product Design</div>
@@ -204,7 +204,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/sergie-magdalin.png" alt="Sergie Magdalin">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/sergie-magdalin.png" alt="Sergie Magdalin" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Sergie Magdalin</div>
             <div class="body">Product Design Lead</div>
@@ -213,7 +213,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/mackenzie-child.png" alt="Mackenzie Child">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/mackenzie-child.png" alt="Mackenzie Child" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Mackenzie Child</div>
             <div class="body">Senior Product Designer</div>
@@ -222,7 +222,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/mcguire-brannon.png" alt="McGuire Brannon">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/mcguire-brannon.png" alt="McGuire Brannon" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">McGuire Brannon</div>
             <div class="body">Creative Direction</div>
@@ -236,7 +236,7 @@
 </header>
 
 <section class="z-10 bg-black"><!--overview-->
-  <div class="container py-10 md:py-16 xl:px-32 mx-auto">
+  <div class="container py-10 md:py-16 mx-auto">
     <video class="inline-block max-w-full" controls loop autoplay muted>
         <source src="/images/webflow-rebrand/overview.mp4" type="video/mp4">
         <source src="/images/webflow-rebrand/overview.webm" type="video/webm">
@@ -264,7 +264,7 @@
   </svg>
 </section>
   <section class="z-10 bg-grey"><!--process-->
-    <div class="container py-10 md:py-16 lg:py-24 xl:py-32 xl:px-32 mx-auto">
+    <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
       <div class="caption uppercase tracking-wider text-center mb-5">
         Research
       </div>
@@ -287,7 +287,7 @@
         <img src="/images/squiggles/bigcloud.gif" alt="" aria-hidden="true" data-echo="/images/webflow-rebrand/activity-2.png">
       </div>
     </div>
-    <div class="container py-10 md:py-16 lg:py-24 xl:py-32 xl:px-32 mx-auto">
+    <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
       <div class="subhead text-center mb-16 lg:w-2/3 lg:mx-auto">
         The results showed a shared admiration for brands with end to end cohesion, and design centered approach. 
       </div>
@@ -317,7 +317,7 @@
   </svg>
 </section>
  <section class="bg-stars">
-   <div class="container xl:px-32 py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
+   <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
      <div class="caption uppercase text-center mb-5">
        Type
      </div>
@@ -346,7 +346,7 @@
       <div class="subhead text-center mb-5 px-16 md:w-2/3 mx-auto">I tried further abstracting the geo concept, reducing parts of letters to primary shapes, but none of these ideas reduced to a cohesive design.</div>
       <img class="w-full max-w-full" src="/images/squiggles/bigcloud.gif" alt="" data-echo="/images/webflow-rebrand/type-sketch-05.svg">
     </div>
-    <div class="container xl:px-32 py-10 md:py-16 lg:py-24 mx-auto">
+    <div class="container py-10 md:py-16 lg:py-24 mx-auto">
       <div class="lg:flex border-2 border-black bg-white rounded-lg p-10 mb-5">
         <div class="mb-5 lg:w-1/12">
               <p class="caption mb-5">Display</p>
@@ -369,7 +369,7 @@
         <img src="/images/squiggles/bigcloud.gif" alt="" data-echo="/images/webflow-rebrand/type-guidelines.png">
       </div>
     </div>
-    <div class="container xl:px-32 py-10 md:py-16 lg:py-24 mx-auto">
+    <div class="container py-10 md:py-16 lg:py-24 mx-auto">
     </div>
  </section>
 

@@ -11,8 +11,8 @@
   <meta name="description" content="After a successful pilot, BYUtv bought one season of Making Good. Cosmic Pictures came to me for a brand that could flex across the 12 episodes they would edit and deliver over the next year.">
   <meta property="og:description" content="After a successful pilot, BYUtv bought one season of Making Good. Cosmic Pictures came to me for a brand that could flex across the 12 episodes they would edit and deliver over the next year.">
   
-  <link rel="stylesheet" href="/assets/css/style.css?1776136886805272000">
-  <script type="text/javascript" src="/assets/js/js.js?1776136886805272000"></script>
+  <link rel="stylesheet" href="/assets/css/style.css?1776137458863594000">
+  <script type="text/javascript" src="/assets/js/js.js?1776137458863594000"></script>
   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.7/dist/dotlottie-wc.js" type="module"></script>
   <link rel="icon" type="image/png" href="/images/squiggles/favicon.png"/>
   <meta property="og:image" content="/images/share-image.png">
@@ -86,7 +86,7 @@
   </nav>
 
   <div id="main" class="main relative flex-grow max-w-full overflow-x-hidden">
-    <nav class="top-nav sticky top-0 z-50 bg-lime border-b-2 border-black">
+    <nav class="top-nav sticky top-0 z-50 bg-lime border-b-2 border-black" id="topNav">
       <div class="flex items-center justify-end px-2 py-2 mx-auto">
         <a href="#footer" class="body text-gray-600 mr-6">About</a>
         
@@ -112,7 +112,7 @@
 
 
 <header class="header  text-white">
-  <div class="px-2 py-2 flex flex-col justify-between min-h-screen ">
+  <div class="px-2 py-2 flex flex-col justify-between " style="min-height: calc(100vh - var(--nav-height, 0px));">
 
     <div class="flex-1">
       <!-- Title row -->
@@ -132,16 +132,16 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/me,-kyle.png" alt="Me, Kyle">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/me,-kyle.png" alt="Me, Kyle" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Me, Kyle</div>
-            <div class="body">Senior Brand Designer</div>
+            <div class="body">Brand Designer</div>
           </div>
         </div>
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/jack-mergist.png" alt="Jack Mergist">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/jack-mergist.png" alt="Jack Mergist" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Jack Mergist</div>
             <div class="body">Showrunner</div>
@@ -150,10 +150,10 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/jeff-wiggins.png" alt="Jeff Wiggins">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/jeff-wiggins.png" alt="Jeff Wiggins" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Jeff Wiggins</div>
-            <div class="body">Design</div>
+            <div class="body">Production Designer</div>
           </div>
         </div>
         
@@ -164,7 +164,7 @@
 </header>
 
 <section class="z-10 bg-black"><!--overview-->
-  <div class="container py-10 md:py-16 lg:py-24 xl:py-32 xl:px-32 mx-auto">
+  <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
     <img src="/images/squiggles/bigcloud.gif" alt="" data-echo="/images/making-good/screens.png">
     <div class="flex flex-wrap max-w-full">
       <img class="w-full md:self-center md:w-7/12" src="/images/squiggles/bigcloud.gif" alt="" data-echo="/images/making-good/title-1.png">
@@ -200,7 +200,7 @@
   </svg>
 </section>
   <section class="z-10 bg-purple"><!--process-->
-    <div class="container py-10 md:py-16 lg:py-24 xl:py-32 xl:px-32 mx-auto">
+    <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
       <div class="caption uppercase tracking-wider text-center mb-5">
         Process
       </div>
@@ -270,7 +270,7 @@
   </svg>
 </section>
  <section class="bg-pink">
-   <div class="container xl:px-32 py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
+   <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
      <div class="caption uppercase text-center mb-5">
        The rollout
      </div>

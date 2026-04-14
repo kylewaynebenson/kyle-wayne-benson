@@ -1,4 +1,16 @@
 
+// Set --nav-height CSS variable from actual nav size
+(function () {
+  function setNavHeight() {
+    var nav = document.getElementById('topNav');
+    if (nav) {
+      document.documentElement.style.setProperty('--nav-height', nav.offsetHeight + 'px');
+    }
+  }
+  document.addEventListener('DOMContentLoaded', setNavHeight);
+  window.addEventListener('resize', setNavHeight);
+})();
+
 // Menu toggle — works on both mobile and desktop
 function toggleMenu() {
   var sideNav = document.getElementById('sideNav');

@@ -11,8 +11,8 @@
   <meta name="description" content="Intercom's first out-of-home campaign included subway and billboard ads in SF, airport ads in Austin, and GTM spots across Facebook and Youtube.">
   <meta property="og:description" content="Intercom's first out-of-home campaign included subway and billboard ads in SF, airport ads in Austin, and GTM spots across Facebook and Youtube.">
   
-  <link rel="stylesheet" href="/assets/css/style.css?1776136886805272000">
-  <script type="text/javascript" src="/assets/js/js.js?1776136886805272000"></script>
+  <link rel="stylesheet" href="/assets/css/style.css?1776137501478493000">
+  <script type="text/javascript" src="/assets/js/js.js?1776137501478493000"></script>
   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.7/dist/dotlottie-wc.js" type="module"></script>
   <link rel="icon" type="image/png" href="/images/squiggles/favicon.png"/>
   <meta property="og:image" content="/images/share-image.png">
@@ -86,7 +86,7 @@
   </nav>
 
   <div id="main" class="main relative flex-grow max-w-full overflow-x-hidden">
-    <nav class="top-nav sticky top-0 z-50 bg-lime border-b-2 border-black">
+    <nav class="top-nav sticky top-0 z-50 bg-lime border-b-2 border-black" id="topNav">
       <div class="flex items-center justify-end px-2 py-2 mx-auto">
         <a href="#footer" class="body text-gray-600 mr-6">About</a>
         
@@ -112,7 +112,7 @@
 
 
 <header class="header ">
-  <div class="px-2 py-2 flex flex-col justify-between min-h-screen ">
+  <div class="px-2 py-2 flex flex-col justify-between " style="min-height: calc(100vh - var(--nav-height, 0px));">
 
     <div class="flex-1">
       <!-- Title row -->
@@ -132,7 +132,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/me,-kyle.png" alt="Me, Kyle">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/me,-kyle.png" alt="Me, Kyle" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Me, Kyle</div>
             <div class="body">Senior Brand Designer</div>
@@ -141,7 +141,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/chelsea-spratling.png" alt="Chelsea Spratling">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/chelsea-spratling.png" alt="Chelsea Spratling" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Chelsea Spratling</div>
             <div class="body">Copywriter</div>
@@ -150,7 +150,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/dani-balenson.png" alt="Dani Balenson">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/dani-balenson.png" alt="Dani Balenson" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Dani Balenson</div>
             <div class="body">Brand Designer</div>
@@ -159,7 +159,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/brooks-chambers.png" alt="Brooks Chambers">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/brooks-chambers.png" alt="Brooks Chambers" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Brooks Chambers</div>
             <div class="body">Strategist</div>
@@ -168,7 +168,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/stewart-scott-curran.png" alt="Stewart Scott-Curran">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/stewart-scott-curran.png" alt="Stewart Scott-Curran" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Stewart Scott-Curran</div>
             <div class="body">Creative Director</div>
@@ -177,7 +177,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/stewart-scott-curran.png" alt="Stewart Scott-Curran">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/stewart-scott-curran.png" alt="Stewart Scott-Curran" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Stewart Scott-Curran</div>
             <div class="body">Creative Director</div>
@@ -186,7 +186,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/carly-wright.png" alt="Carly Wright">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/carly-wright.png" alt="Carly Wright" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Carly Wright</div>
             <div class="body">Producer</div>
@@ -195,7 +195,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/jason-yim.png" alt="Jason Yim">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/jason-yim.png" alt="Jason Yim" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Jason Yim</div>
             <div class="body">Brand Designer</div>
@@ -204,7 +204,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/lily-wang.png" alt="Lily Wang">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/lily-wang.png" alt="Lily Wang" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Lily Wang</div>
             <div class="body">Brand Designer</div>
@@ -213,7 +213,7 @@
         
         <div class="flex items-center w-1/2 lg:w-1/3 mb-2">
           
-          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/anna-alexia-basile.png" alt="Anna Alexia-Basile">
+          <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/anna-alexia-basile.png" alt="Anna Alexia-Basile" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
             <div class="body italic text-gray-600">Anna Alexia-Basile</div>
             <div class="body">Photographer</div>
@@ -247,7 +247,7 @@
 </section>
 
 <section class="z-10 bg-grey">
-  <div class="container xl:px-32 py-16 mx-auto">
+  <div class="container py-16 mx-auto">
     <div class="caption uppercase text-center mb-5">Process</div>
     <div class="subhead text-center mb-10 lg:w-2/3 mx-auto">After getting the strategy and a few sample headlines locked, the core team had about four weeks to extrapolate that info into 10 lockups.</div>
     <div class="glow block md:w-1/2 lg:w-1/3 mx-auto mb-10">
@@ -269,7 +269,7 @@
     <div class="md:flex md:justify-between mb-16">
       <div class="mb-5 md:w-1/3 md:mb-0 md:mr-8">
           <img class="max-w-full rounded-lg border-2 border-black mb-10" src="/images/squiggles/process-inspo--tiny1." alt="" data-echo="/images/or-you-could-use-intercom/process-inspo-1.png">
-          <div class="pullquote mb-5">
+          <div class="body mb-5">
             We gravitated toward ads that didn’t just show software or happy customers
           </div>
           <div class="body">Obviously everyone wants to make a classic ad, but we knew “Or you could use Intercom” would only work if the viewer felt the ad-ness. They had to know to some extent that they were being advertised to.</div>
@@ -354,7 +354,7 @@
 </section>
 
 <section class="z-10 bg-white"><!--bart-->
-  <div class="container xl:px-32 py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
+  <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
     <div class="caption uppercase tracking-wider text-center mb-5">
       Bart takeover
     </div>
@@ -392,7 +392,7 @@
 </section>
 
 <section class="bg-purple">
-  <div class="container xl:px-32 py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
+  <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
     <div class="caption uppercase text-center mb-5">
       Youtube Ads
     </div>
