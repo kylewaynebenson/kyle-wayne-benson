@@ -29,6 +29,8 @@ module.exports = {
       tan: '#F6F5EF',
       periwinkle: '#7798F8',
       green: '#566B10',
+      mint: '#F0F9F4',
+      lime: '#DDF8B5',
       pink: '#EC6DEA',
       grey: '#C4C4C4',
     },
@@ -40,8 +42,7 @@ module.exports = {
       'gray-lightgray': [theme('colors.gray.200'), theme('colors.gray.300')],
     }),
     fontFamily: {
-      geordi: ['VC Geordi', 'sans-serif'],
-      gosh: ['VC Gosh ExtraCondensed', 'serif'],
+      nudge: ['VC Nudge SemiNormal', 'sans-serif'],
     },
     extend: {
       colors: {
@@ -51,7 +52,7 @@ module.exports = {
           '300': '#e0e0e0',
           '400': '#bdbdbd',
           '500': '#9e9e9e',
-          '600': '#757575',
+          '600': '#7B7874',
           '700': '#616161',
           '800': '#424242',
           '900': '#212121',

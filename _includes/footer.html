@@ -1,47 +1,50 @@
-<footer class="bg-green font-body pt-32 pb-16 -mt-32">
-  <div class="container">
-    <div class="flex flex-wrap items-top justify-center text-white">
-      <div class="w-full md:w-1/2 lg:w-1/3 text-center md:text-left mb-10">
-        <img width="100px" height="auto" src="{{ '/images/' | relative_url }}squiggles/kyle.png"/>
-        <a class="bg-black rounded-full whitespace-no-wrap px-16 py-8 subhead tiny-cloud" href="mailto:{{site.email}}">Email me</a>
+<footer id="footer" name="footer" class="bg-mint font-nudge px-2 py-2 border-t-2 border-black">
+    <!-- Top: Name + Bio -->
+    <div class="flex flex-wrap justify-between">
+      <div class="w-full md:w-1/3 mb-8 md:mb-0 flex flex-col">
+        <img width="200px" height="auto" src="{{ '/images/' | relative_url }}squiggles/logo.svg" alt="Kyle W. Benson" class="mb-8"/>
+        <div class="flex-1 flex items-end">
+          <img class="w-48 h-48 rounded-full object-cover" src="{{ '/images/' | relative_url }}squiggles/kyle.png" alt="Kyle Wayne Benson"/>
+        </div>
       </div>
-      <div class="w-full md:w-1/2 lg:w-2/3 lg:flex">
-        <div class="lg:w-7/12">
-          <div class="font-bold mb-5">Colophon</div>
-          <div class="body mb-10">
-            Copywriting help from Emily Brown. Illustrations and animations made in Procreate. Built using Jekyll, tailwind.css, and hosted on github pages. Anything admired on this website is thanks to my friends, whom I love. ©Friends of Kyle Wayne Benson 2020 or whatever.
-          </div>
-          <div>
-            <div class="font-bold mb-5">Other places online</div>
-            <a href="https://kylewaynebenson.substack.com/welcome" class="inline-block bg-black text-white rounded-full grow px-4 py-2 mb-2 caption uppercase">Substack</a>
-            <a href="https://twitter.com/kylewaynebenson/status/1148109469823356928?s=20" class="inline-block bg-stars text-black rounded-full grow px-4 py-2 mb-2 caption uppercase">Twitter</a>
-            <a href="https://www.instagram.com/verycoolstudio/" class="inline-block bg-check text-black rounded-full grow px-4 py-2 mb-2 caption uppercase">Instagram</a>
-            <a href="https://www.verycoolstudio.com/" class="inline-block bg-purple rounded-full grow px-4 py-2 mb-2 caption uppercase">Very Cool Studio</a>
-            <a href="https://www.songclubrecords.com/" class="inline-block bg-pink rounded-full grow px-4 py-2 mb-2 caption uppercase">Song Club Records</a>
-          </div>
-        </div>
-        <div class="lg:w-5/12 lg:pl-10">
-          <div class="font-bold mb-5">Fonts</div>
-          <a class="bg-orange block flex items-center rounded-lg grow mb-4" href="http://www.futurefonts.xyz/verycoolstudio">
-            <div class="bg-pink font-gosh font-semibold rounded-tl-lg rounded-bl-lg text-3xl w-16 text-center p-2">
-              Aa
-            </div>
-            <div class="font-geordi font-regular text-1xl py-2 px-6">
-              VC Gosh
-            </div>
-          </a>
-          <a class="bg-orange block flex items-center rounded-lg grow mb-4" href="http://www.futurefonts.xyz/verycoolstudio">
-            <div class="bg-pink font-geordi font-bold rounded-tl-lg rounded-bl-lg text-3xl w-16 text-center p-2">
-              Aa
-            </div>
-            <div class="font-geordi font-regular text-1xl py-2 px-6">
-              VC Geordi
-            </div>
-          </a>
-        </div>
+      <div class="w-full md:w-2/3">
+        <p class="text-gray-600 text-justify leading-relaxed two-col">{{ site.description }}. I run Very Cool, work as a brand designer at GitHub, and run Song Club Records.</p>
+        <!-- Links table -->
+        <table class="w-full mt-32 text-gray-600">
+          <thead>
+            <tr>
+              <th class="text-left font-normal italic pb-10">Category</th>
+              <th class="text-right font-normal italic pb-10">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-dashed border-gray-600">
+              <td class="font-bold align-top">Social</td>
+              <td class="text-right align-top">
+                <a class="block" href="https://twitter.com/kylewaynebenson">Twitter</a>
+                <a class="block" href="https://www.instagram.com/verycoolstudio/">Instagram</a>
+                <a class="block" href="https://bsky.app/profile/kylewaynebenson.com">Bluesky</a>
+                <a class="block" href="https://kylewaynebenson.substack.com/welcome">Substack</a>
+              </td>
+            </tr>
+            <tr class="border-t border-dashed border-gray-600">
+              <td class="font-bold align-top">Colophon</td>
+              <td class="text-right align-top">
+                <span class="block">Font is VC Nudge SemiNormal</span>
+                <span class="block">Hosted on GitHub Pages</span>
+                <span class="block">Built on Jekyll with tailwind</span>
+              </td>
+            </tr>
+            <tr class="border-t border-dashed border-gray-600">
+              <td class="font-bold align-top">Contact</td>
+              <td class="text-right align-top">
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div><!--/container-->
 </footer>
 </div><!--/main-->
 <!-- Global site tag (gtag.js) - Google Analytics -->

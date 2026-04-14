@@ -1,24 +1,18 @@
 
-// Side nav animation
-function sideNav() {
-  var sideNav = document.querySelector("#sideNav");
-  var main = document.querySelector("#main");
-  sideNav.classList.toggle('active');
-  main.classList.toggle('active');
-}
-
-// Auto-open work menu on work pages at lg+ breakpoints
-(function () {
-  var body = document.body;
-  // Work pages use layout: work which adds body class or we detect via sideNav presence + page type
+// Menu toggle — works on both mobile and desktop
+function toggleMenu() {
   var sideNav = document.getElementById('sideNav');
   var main = document.getElementById('main');
   if (!sideNav || !main) return;
-  if (window.matchMedia('(min-width: 1024px)').matches) {
-    sideNav.classList.add('active');
-    main.classList.add('active');
+
+  var isMobile = !window.matchMedia('(min-width: 768px)').matches;
+  if (isMobile) {
+    sideNav.classList.toggle('active');
+  } else {
+    sideNav.classList.toggle('closed');
+    main.classList.toggle('expanded');
   }
-})();
+}
 
 // Logo scrub – interactive Lottie that travels between two static SVG endpoints
 // Expects markup with ids: logo-scrub, logo-left, logo-lottie, logo-player, logo-right
