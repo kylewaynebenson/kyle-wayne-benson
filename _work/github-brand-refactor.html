@@ -32,12 +32,16 @@ header:
 ---
 {% include work-header.html %}
 
-{% include hr-squiggle.html top='block' bottom='white' spacing='tight' %}
+{% include hr-squiggle.html top='black' bottom='white' spacing='tight' %}
 
 <section class="bg-white">
-  <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
-    <div class="caption uppercase text-center mb-5">Design</div>
-    <div class="subhead text-center mx-auto lg:w-2/3 mb-16">The refactor wasn’t about inventing a one-off campaign look. It was about improving our quality defaults. And there's no bigger default than the logo—arguably the most known in developer tech.</div>
+  <div class="py-2 px-2">
+      {% include image-caption.html 
+        image="github-brand-refactor/logo-favicon.png" 
+        title="Updated Logo" 
+        caption="Mona's head got a little more circular, less boxy. The vectors transition better, are less tense overall. A subtle curve inflection and slightly bigger arm support a more tentacle-like feeling creates better overall symmetry." 
+        theme="white"
+      %}
     <div id="logo-scrub" class="relative md:flex md:justify-between items-center mx-auto">
         <div id="logo-left" class="md:w-5/12" style="transition: opacity 1.3s ease;">
             <img class="w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="Old GitHub logo" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/logo-old.svg">
@@ -51,22 +55,10 @@ header:
             <div class="caption text-center mt-5">New (2026+)</div>
         </div>
     </div>
-    <div class="w-full flex-col py-10 md:py-16 lg:py-24 xl:py-32 md:w-2/3 lg:w-1/2 md:mx-auto md:text-center">
-      <div class="subhead mb-10">It's hard to justify a change that's this subtle—borderline not noticeable by most people.</div>
-      <img class="max-w-full mb-10" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/logo-scales.svg">
-      <div class="body mb-5">And, maybe that's just the burden of a case study? Most choices never measure up. That said, here's what I did. I thought it made the mark more beautiful, at every scale. If you can believe that.</div>
-      <div class="body">Mona's head gets a little more circular, less boxy. The curves are slightly less tense. The vectors transition better. A subtle curve inflection and slightly bigger arm support a more tentacle-like feeling (ahem, she's half octopus, half cat), and its proximity to the body helps with overall symmetry.</div>
-    </div>
-    <div class="sm:flex image w-full lg:w-2/3 lg:mx-auto">
-      <img class="max-w-full sm:w-1/2" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/logo-favicon-01.png">
-      <img class="max-w-full sm:w-1/2" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/logo-favicon-02.png">
-    </div>
   </div><!--container-->
   <div class="marquee-image"><!-- marquee image-->
     <div class="marquee-image-track">
         <img src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/logo-guidelines.png">
     </div>
   </div>
-  <div class="container py-10 md:py-16 lg:py-24 mx-auto">
-  </div> 
 </section>
