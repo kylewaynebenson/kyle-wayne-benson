@@ -1,16 +1,4 @@
-{% assign header = page.header %}
-{% assign header_variant = header.variant | default: 'none' %}
-{% assign header_align = header.align | default: 'center' %}
-
-{% assign meta_class = 'text-center caption mb-5' %}
-{% assign summary_class = 'text-center subhead mb-5 lg:w-2/3 lg:mx-auto' %}
-
-{% if header.title_class %}{% assign title_class = header.title_class %}{% endif %}
-{% if header.meta_class %}{% assign meta_class = header.meta_class %}{% endif %}
-{% if header.summary_class %}{% assign summary_class = header.summary_class %}{% endif %}
-{% if header.details_class %}{% assign details_class = header.details_class %}{% endif %}
-
-<header class="header {% if header.class %} {{ header.class }}{% endif %}">
+<header class="header">
   <div class="px-2 py-2 flex flex-col justify-between {% if header.container_class %} {{ header.container_class }}{% endif %}" style="min-height: calc(100vh - var(--nav-height, 0px));">
 
     <div class="flex-1">
@@ -21,7 +9,7 @@
       </div>
       <!-- Summary -->
       {% if page.summary %}
-      <p class="body text-gray-600 text-justify mb-16 leading-relaxed two-col">{{ page.summary }}</p>
+      <p class="body text-gray-600 text-justify mb-16 leading-relaxed md:w-1/2">{{ page.summary }}</p>
       {% endif %}
     </div>
 

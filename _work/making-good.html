@@ -28,7 +28,8 @@ header:
 {% include work-header.html %}
 
 <section class="z-10 bg-black"><!--overview-->
-  <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
+  <div class="container py-10">
+    <img src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.png">
     <img src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/screens.png">
     <div class="flex flex-wrap max-w-full">
       <img class="w-full md:self-center md:w-7/12" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/title-1.png">
@@ -41,68 +42,6 @@ header:
       <img class="w-1/2 self-center" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/credits.png">
       <img class="w-1/2 self-center" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/thumbnail.png">
     </div>
-  </div><!--container-->
-  </section>
-  <!--squiggly rule -->
-  {% include hr-squiggle.html top='black' bottom='purple' spacing='tight' %}
-  <section class="z-10 bg-purple"><!--process-->
-    <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
-      <div class="caption uppercase tracking-wider text-center mb-5">
-        Process
-      </div>
-      <div class="subhead text-center mb-16 lg:w-2/3 lg:mx-auto">
-        The story at the heart of Making Good didn't need much explaining. The audience learns all they need to know in the first 30 seconds of the show. The thing in question, the part design could help with, was giving the viewer the opportunity to empathize and connect with Kirby as a person.
-      </div>
-      <div class="md:flex md:justify-between mb-16">
-        <div class="mb-5 md:w-1/3 md:mb-0 md:mr-8">
-            <img class="max-w-full rounded-lg border-2 border-black" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/pitch-alaingree.png">
-        </div>
-        <div class="mb-5 md:w-1/3 md:mb-0 md:mx-4">
-            <img class="max-w-full rounded-lg border-2 border-black" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/pitch-bc-1.png">
-        </div>
-        <div class="mb-5 md:w-1/3 md:mb-0 md:ml-8">
-            <img class="max-w-full rounded-lg border-2 border-black" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/pitch-bc-2.png">
-        </div>
-      </div>
-      <div class="subhead text-center mb-16 lg:w-2/3 lg:mx-auto">
-        The pitch that resonated with Jack Mergist, Making Good's showrunner, leveraged color, type, and illustration from late 50s Betty Crocker cookbooks, and the illustration style of Alain Grée.
-      </div>
-      <div class="glow block md:w-1/2 lg:w-1/3 mx-auto mb-10">
-        <img class="max-w-full rounded-lg border-2 border-black mb-5" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/jack-email.png">
-      </div>
-      <div class="flex mb-10">
-        <div class="text-center w-1/2 image bg-white px-10 py-8 mr-6">
-          <div class="caption mb-5">Gosh Wide Medium</div>
-          <img class="max-w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/gosh-wide-medium.png">
-        </div>
-        <div class="text-center w-1/2 image bg-white px-10 py-8 ml-6">
-          <div class="caption mb-5">Nibley Small Semibold</div>
-          <img class="max-w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/nibley-small-semibold.png">
-        </div>
-      </div>
-      <div class="subhead text-center mb-16 lg:w-2/3 lg:mx-auto">
-        Throughout the process we talked a lot about making sure the in-house team at Cosmos didn't get stuck with a brand that needed a full time letterer or illustrator to implement it day in day out.
-      </div>
-      <div class="glow block md:w-1/2 lg:w-1/3 mx-auto mb-10">
-        <img class="max-w-full rounded-lg border-2 border-black mb-5" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/brand-book.png">
-      </div>
-      <div class="body text-center md:w-1/2 lg:w-1/3 mx-auto mb-16">
-        The deliverables included a 28 page pdf guidelines for editors, vendors, and caption or title designers.
-      </div>
-      <img class="max-w-full rounded-lg mb-10" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/logo-optical-sizes.png">
-      <div class="body text-center md:w-1/2 lg:w-1/3 mx-auto mb-16">
-        Optical sizes for the title.
-      </div>
-   </div><!--container-->
- </section>
- <!--squiggly rule -->
-  {% include hr-squiggle.html top='purple' bottom='pink' spacing='tight' %}
- <section class="bg-pink">
-   <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
-     <div class="caption uppercase text-center mb-5">
-       The rollout
-     </div>
-     <div class="subhead text-center mb-16 mx-auto md:w-2/3">With branding projects, my work ends where the real work begins. Nine months after the hand-off, I got to see the roll out of the brand across all its many touchpoints. It was fun to see all the ways their talented team put my tiny ideas into social media campaigns and full length episodes.</div>
      <div class="flex flex-wrap justify-center mb-16">
        <div class="max-w-full w-2/3 md:w-4/12 self-center mb-10 md:mx-5">
          <img class="rounded-lg border-2 border-black" src="{{ '/images/' | relative_url }}squiggles/process-draft-4.png" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-1.jpg">
@@ -113,49 +52,39 @@ header:
        <img class="max-w-full w-5/12 md:w-5/12 self-center rounded-lg border-2 border-black mb-10 mx-5" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny2." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-3.jpg">
        <img class="max-w-full w-5/12 md:w-5/12 self-center rounded-lg border-2 border-black mb-10 mx-5" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny2." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-4.jpg">
      </div>
-     <div class="flex flex-wrap items-center mb-16 lg:w-2/3 mx-auto rounded-lg border-black border-2"><!--quote-->
-         <div class="w-10/12 mx-auto hanging-quote pullquote py-8">
-           “Gee wiz the guidelines cleared up any confusion, leaving me to focus on the creative work.”
-         </div>
-         <div class="bg-orange border-black border-t-2">
-           <div class="flex justify-between w-10/12 mx-auto">
-             <div class="w-9/12 self-center py-2 text-left">
-               <span class="subhead">
-                 Jeff Wiggins
-               </span>
-               <span class="caption uppercase">
-                 Designer, all-around great guy
-               </span>
-             </div>
-             <img class="w-3/12 self-end pl-10 -mt-12" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}testimonials/jeff-wiggins.png" />
-           </div>
-         </div>
-     </div><!--quote-->
-     <div class="md:flex md:justify-between">
-         <div class="w-1/2 text-center image mb-10">
-             <a class="block bg-black" href="https://www.instagram.com/makinggoodtv/">
-               <svg class="inline-block" width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.57136 6H6.4285V4.0714C6.4285 3.00628 5.56505 2.14283 4.49993 2.14283C3.43481 2.14283 2.57136 3.00628 2.57136 4.0714V6ZM1.28564 6C0.575596 6.00004 0 6.57566 0 7.28571V11.7143C0 12.4244 0.575634 13 1.28571 13H7.71429C8.42437 13 9 12.4244 9 11.7143V7.28571C9 6.57563 8.42437 6 7.71429 6H7.71422V4.0714C7.71422 2.2962 6.27513 0.857117 4.49993 0.857117C2.72473 0.857117 1.28564 2.2962 1.28564 4.0714V6Z" fill="white"/>
-               </svg>
-               <span class="inline-block caption text-white leading-none py-3">https://www.instagram.com/makinggoodtv/</span>
-             </a>
-             <video class="inline-block max-w-full" controls loop>
-               <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-title.mp4" type="video/mp4">
-               <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-title.webm" type="video/webm">
-             </video>
-           </div>
-           <div class="w-1/2 text-center image md:ml-10 mb-10">
-               <a class="block bg-black" href="https://www.instagram.com/makinggoodtv/">
-                 <svg class="inline-block" width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                   <path fill-rule="evenodd" clip-rule="evenodd" d="M2.57136 6H6.4285V4.0714C6.4285 3.00628 5.56505 2.14283 4.49993 2.14283C3.43481 2.14283 2.57136 3.00628 2.57136 4.0714V6ZM1.28564 6C0.575596 6.00004 0 6.57566 0 7.28571V11.7143C0 12.4244 0.575634 13 1.28571 13H7.71429C8.42437 13 9 12.4244 9 11.7143V7.28571C9 6.57563 8.42437 6 7.71429 6H7.71422V4.0714C7.71422 2.2962 6.27513 0.857117 4.49993 0.857117C2.72473 0.857117 1.28564 2.2962 1.28564 4.0714V6Z" fill="white"/>
-                 </svg>
-                 <span class="inline-block caption text-white leading-none py-3">https://www.instagram.com/makinggoodtv/</span>
-               </a>
-               <video class="inline-block max-w-full" controls loop>
-                 <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-singalong.mp4" type="video/mp4">
-                 <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-singalong.webm" type="video/webm">
-               </video>
-           </div>
-     </div>
+    <video class="inline-block w-full mb-2" controls loop>
+      <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-title.mp4" type="video/mp4">
+      <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-title.webm" type="video/webm">
+    </video>
+    <video class="inline-block w-full" controls loop>
+      <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-singalong.mp4" type="video/mp4">
+      <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/inhouse-singalong.webm" type="video/webm">
+    </video>
    </div>
  </section>
+ <section>
+   {% include image-caption.html 
+    image="making-good/direction.png" 
+    title="Creative Direction" 
+    caption="Jack Mergist, Making Good's showrunner, wanted it to feel like Saul Bass, Brady Bunch, Monster's Inc. I looked to 50s Betty Crocker cookbooks, and Alain Grée. We felt like these styles empathized Kirby's ability to connect person-to-person."
+    theme="black"
+  %}
+    {% include image-caption.html 
+    image="making-good/brand-book.png" 
+    title="Guidelines" 
+    caption="The deliverables included a 28 page pdf guidelines for editors, vendors, and caption or title designers. Throughout the process we talked a lot about making sure the in-house team at Cosmos didn't get stuck with a brand that needed a full time letterer or illustrator to implement it day in day out. With branding projects, my work ends where the real work begins. Nine months after the hand-off, I got to see the roll out of the brand across all its many touchpoints. It was fun to see all the ways their talented team put my tiny ideas into social media campaigns and full length episodes."
+    theme="black"
+  %}
+  {% include image-caption.html 
+    image="making-good/logo-optical-sizes.png" 
+    title="Logo Optical Sizes" 
+    caption="Because the kit needed to span digital, print, and video applications, I created two optical sizes of the logo."
+    theme="black"
+  %}
+  {% include image-caption.html 
+    image="making-good/typography.png" 
+    title="Typography" 
+    caption="Throughout the process we talked a lot about making sure the in-house team at Cosmos didn't get stuck with a brand that needed a full time letterer or illustrator to implement it day in day out. This lead pretty naturally into the creation of some opinionated, bespoke fonts." 
+    theme="black"
+  %}
+</section>

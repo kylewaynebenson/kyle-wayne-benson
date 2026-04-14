@@ -25,13 +25,15 @@ collaborators:
   - name: Carly Wright
     url: https://www.instagram.com/carknowsdatswright/
     role: Producer
-header:
-  variant: linked-video
-  link_url: https://intercombrand.studio/
-  link_label: https://intercombrand.studio/
-  link_class: block text-center link-out image mb-10
 ---
 {% include work-header.html %}
+
+<section class="bg-white px-2 py-10">
+    <video class="inline-block max-w-full" controls loop autoplay muted>
+      <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.mp4" type="video/mp4">
+      <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.webm" type="video/webm">
+    </video>
+</section>
 <!--squiggly rule -->
 {% include hr-squiggle.html top='white' bottom='grey' spacing='tight' %}
 

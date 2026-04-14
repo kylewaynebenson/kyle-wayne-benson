@@ -8,11 +8,6 @@ image: .png
 theme: black
 summary: >-
   Webflow just turned ten. Its style was beginning to lag behind the competition. In an effort to catch up, the internal team put together a two month sprint to refresh the look of the brand and product design. The work was expanded and implemented by every designer at Webflow, the team listed here is just that core sprint group.
-contributions:
-  - research
-  - art direction
-  - icons
-  - type
 collaborators:
   - name: Me, Kyle
     role: Principal Brand Designer
@@ -36,15 +31,12 @@ collaborators:
     role: Senior Product Designer
   - name: McGuire Brannon
     role: Creative Direction
-header:
-  variant: image
-  class: text-white
 ---
 
 {% include work-header.html %}
 
 <section class="z-10 bg-black"><!--overview-->
-  <div class="container py-10 md:py-16 mx-auto">
+  <div class="px-2 py-10">
     <video class="inline-block max-w-full" controls loop autoplay muted>
         <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/overview.mp4" type="video/mp4">
         <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/overview.webm" type="video/webm">
