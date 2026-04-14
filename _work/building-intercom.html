@@ -23,11 +23,24 @@ header:
   media_class: mx-auto w-2/3 md:w-64 mb-5
 ---
 {% include work-header.html %}
+
+<section class="bg-black px-2 py-2">
+  <video class="inline-block w-full" autoplay muted playsinline loop>
+    <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.mp4" type="video/mp4">
+    <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.webm" type="video/webm">
+  </video>
+  <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/process-draft-4.png" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-03.jpg">
+  <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny3." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-02.jpg">
+  <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny2." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-04.jpg">
+  <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny2." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-05.jpg">
+  <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny2." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-07.jpg">
+</section>
+
 <!--squiggly rule -->
 {% include hr-squiggle.html top='black' bottom='purple' %}
 
 <section class="z-10 bg-purple">
-  <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
+  <div class="py-10 px-2">
     <div class="caption uppercase tracking-wider text-center mb-5">
         Designing for Engineers
     </div>
@@ -74,84 +87,37 @@ header:
 {% include hr-squiggle.html top='purple' bottom='white' spacing='tight' %}
 
   <section class="bg-white">
-    <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
-      <div class="flex flex-wrap items-center justify-center items-top">
-        <div class="w-full text-center md:text-left md:w-6/12 xl:w-5/12 subhead mb-5 md:mb-10 md:pr-10">
-          <p class="uppercase caption mb-5">The rest of the stuff</p>
-          <p>With the type styles locked, it became easier to iterate and flow some of those 1960s computer vector ideas into colors, patterns, icons, and animations.</p>
-        </div>
-        <video class="w-full rounded-lg md:w-5/12 xl:w-5/12 mb-5 md:mb-10" autoplay muted playsinline loop>
-          <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/ads.mp4" type="video/mp4">
-          <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/ads.webm" type="video/webm">
-        </video>
+    <div class="">
+      {% include image-caption.html 
+        video="building-intercom/ads" 
+        title="Building on Typography" 
+        caption="The Hershey fonts did all the heavy lifting. The 1960s computer vector ideas built into the type informed the colors, patterns, icons, and animations." 
+        theme="white"
+      %}
+      <div class="flex flex-wrap justify-center px-2 py-2 ">
+        <img class="w-full md:w-1/2 self-center" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/1710_BuildingIntercom_PosterA3_explore.png">
+        <img class="w-full md:w-1/2 self-center" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/1710_BuildingIntercom_PosterA3_dribbble.png">
       </div>
-      <div class="body text-center md:w-1/2 lg:w-1/3 mx-auto mb-5 md:mb-10">
-        Hershey's family of fonts did the heavy lifting and felt cohesive right out of the box.
-      </div>
-      <div class="flex flex-wrap justify-center" >
-        <img class="w-full md:w-5/12 rounded-lg md:mr-10 self-center mb-5 md:mb-10" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/1710_BuildingIntercom_PosterA3_explore.png">
-        <img class="w-full md:w-5/12 rounded-lg md:ml-10 self-center mb-5 md:mb-10" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/1710_BuildingIntercom_PosterA3_dribbble.png">
-      </div>
-      <div class="body text-center md:w-1/2 lg:w-1/3 mx-auto mb-5 md:mb-10">
-        <p>Still, striking the right tone took some time. "It's a balance", moans every creative director.</p>
-      </div>
-      <video class="w-full rounded-lg mb-5 md:mb-10" autoplay muted playsinline loop>
+      <video class="w-full mb-2 px-2" autoplay muted playsinline loop>
         <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/take-risks.mp4" type="video/mp4">
         <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/take-risks.webm" type="video/webm">
       </video>
-      <div class="body text-center md:w-1/2 lg:w-1/3 mx-auto mb-5 md:mb-10">
-        <p>The vector style lent itself very kindly to vector minded <a href="http://paperjs.org/">paper.js</a>—which powered the experience and animations on the interaction heavy landing page.</p>
-      </div>
-      <video class="w-full rounded-lg mb-5 md:mb-10" autoplay muted playsinline loop>
+      <video class="w-full mb-2 px-2" autoplay muted playsinline loop>
         <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/featuring.mp4" type="video/mp4">
         <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/featuring.webm" type="video/webm">
       </video>
-      <div class="flex flex-wrap justify-between" >
-        <video class="w-full md:w-8/12 xl:9/12 rounded-lg md:mr-10 self-center mb-5 md:mb-10" autoplay muted playsinline loop>
-          <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/site-CTA.mp4" type="video/mp4">
-          <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/site-CTA.webm" type="video/webm">
-        </video>
-        <div class="w-full md:w-3/12 xl:2/12 rounded-lg self-center mb-5 md:mb-10 body">
-          The site was filled with easter eggs, and used custom cursors and interactions to encourage the user to view the source, delete elements, click and drag to customize. With each passing second the site's CTA target would duplicate and ramdomly position the clone over the content, eventually overwhelming the entire site until you signed up.
-        </div>
-      </div>
-      <div class="subhead text-center mb:5 md:mb-16 lg:w-2/3 lg:mx-auto">
-        The technical feel came together with a set of icons built based on the curves and shapes within the Hershey fonts.
-      </div>
-      <div class="glow block md:w-1/2 lg:w-1/3 mx-auto mb-5 md:mb-16">
-        <img class="max-w-full rounded-lg border-2 border-black mb-5" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/icons.png">
-      </div>
-      <a href="https://buildingintercom.com/" class="block text-center link-out image mb-10">
-          <div class="bg-black">
-            <svg class="inline-block" width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.57136 6H6.4285V4.0714C6.4285 3.00628 5.56505 2.14283 4.49993 2.14283C3.43481 2.14283 2.57136 3.00628 2.57136 4.0714V6ZM1.28564 6C0.575596 6.00004 0 6.57566 0 7.28571V11.7143C0 12.4244 0.575634 13 1.28571 13H7.71429C8.42437 13 9 12.4244 9 11.7143V7.28571C9 6.57563 8.42437 6 7.71429 6H7.71422V4.0714C7.71422 2.2962 6.27513 0.857117 4.49993 0.857117C2.72473 0.857117 1.28564 2.2962 1.28564 4.0714V6Z" fill="white"/>
-            </svg>
-            <div class="inline-block caption text-white leading-none py-3">https://buildingintercom.com/</div>
-          </div>
-          <video class="inline-block w-full" autoplay muted playsinline loop>
-            <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.mp4" type="video/mp4">
-            <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.webm" type="video/webm">
-          </video>
-        </a>
+      {% include image-caption.html 
+        video="building-intercom/site-CTA" 
+        title="Call to Action...s" 
+        caption="The site was filled with easter eggs, and used custom cursors and interactions to encourage the user to view the source, delete elements, click and drag to customize. With each passing second the site's CTA target would duplicate and ramdomly position the clone over the content, eventually overwhelming the entire site until you signed up." 
+        theme="white"
+      %}
+      {% include image-caption.html 
+        image="building-intercom/icons.png" 
+        title="Icons" 
+        caption="The kit was rounded out with a set of icons to match the vector style of the Hershey fonts." 
+        theme="white"
+      %}
 
    </div><!--container-->
- </section>
- <!--squiggly rule -->
-  {% include hr-squiggle.html top='white' bottom='pink' spacing='tight' %}
- <section class="bg-pink">
-   <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
-     <div class="caption uppercase text-center mb-5">
-       The event
-     </div>
-     <div class="subhead text-center mb-16 mx-auto md:w-2/3">All the work creating an event brand paid off as I watched the speakers and vendors who created the decks and on stage animations bring the event to life.</div>
-     <div class="flex flex-wrap justify-center mb-5 md:mb-16">
-       <div class="max-w-full w-full md:w-2/3 self-center mb-5 md:mb-10 md:mx-5">
-         <img class="rounded-lg border-2 border-black" src="{{ '/images/' | relative_url }}squiggles/process-draft-4.png" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-03.jpg">
-       </div>
-       <img class="max-w-full w-full mx-auto md:w-5/12 self-center rounded-lg border-2 border-black mb-5 md:mb-10 md:mx-5" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny3." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-02.jpg">
-       <img class="max-w-full w-full mx-auto md:w-5/12 self-center rounded-lg border-2 border-black mb-5 md:mb-10 md:mx-5" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny2." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-04.jpg">
-       <img class="max-w-full w-full mx-auto md:w-5/12 self-center rounded-lg border-2 border-black mb-5 md:mb-10 md:mx-5" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny2." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-05.jpg">
-       <img class="max-w-full w-full mx-auto md:w-5/12 self-center rounded-lg border-2 border-black mb-5 md:mb-10 md:mx-5" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny2." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-07.jpg">
-     </div>
-   </div>
  </section>

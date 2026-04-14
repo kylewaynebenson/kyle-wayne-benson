@@ -13,6 +13,13 @@
     {% endif %}
   </div>
   <div class="w-2/3 pl-2">
+    {% if include.video %}
+    <video class="w-full h-auto" autoplay muted playsinline loop>
+      <source src="{{ '/images/' | relative_url }}{{ include.video }}.mp4" type="video/mp4">
+      <source src="{{ '/images/' | relative_url }}{{ include.video }}.webm" type="video/webm">
+    </video>
+    {% else %}
     <img class="w-full h-auto" src="{{ '/images/' | relative_url }}{{ include.image }}" alt="{{ include.title | default: '' }}">
+    {% endif %}
   </div>
 </div>

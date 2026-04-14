@@ -110,6 +110,10 @@
   background-color: #0E0A0C;
   color: white;
 }
+.bg-white {
+  background-color: white;
+  color: #0E0A0C;
+}
 .bg-check {
   background: url(../../images/backgrounds/check.png) repeat;
 }

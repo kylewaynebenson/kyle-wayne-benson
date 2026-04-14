@@ -15,7 +15,7 @@ contributions:
   - web development
 collaborators:
   - name: Me, Kyle
-    role: Senior Brand Designer
+    role: Brand Designer, Developer
   - name: Kelly Carpenter
     url: https://kellydcarpenter.com/
     role: Brand Designer
@@ -28,158 +28,44 @@ collaborators:
 ---
 {% include work-header.html %}
 
-<section class="bg-white px-2 py-10">
-    <video class="inline-block max-w-full" controls loop autoplay muted>
+<section class="bg-white px-2 py-2">
+    <video class="block pb-2 max-w-full w-full" controls loop autoplay muted>
       <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.mp4" type="video/mp4">
       <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.webm" type="video/webm">
     </video>
-</section>
-<!--squiggly rule -->
-{% include hr-squiggle.html top='white' bottom='grey' spacing='tight' %}
-
-<section class="bg-grey">
-  <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
-  <div class="pullquote text-center mb-5 md:w-2/3 md:mx-auto">Our new library of over 200 uncatalogued books was useless.</div>
-  <div class="block text-center body mx-auto lg:w-1/2 mb-10">
-       With day to day deadlines and priorities, nobody had the energy to get some casual color inspo by laboring through the mammoth collection. That problem definitely needed to be solved, but we thought we could go a little above and be cool about it? From the beginning, Kelly was scoping more than just a website.
-    </div>
-  <img class="max-w-full image mx-auto lg:w-2/3 mb-10" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/build-sheet.png">
-  <div class="md:flex items-center mb-10">
-    <div class="text-center w-full md:w-1/2 md:mr-6">
-      <img class="max-w-full image mb-5" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/photoshoot-1.jpg">
-    </div>
-    <div class="text-left w-full md:w-1/2 md:ml-6">
-      <div class="subhead mb-10">We tried using each book's unique ISBN and the OpenLibrary API to populate the cover image for our database, but very few of our books had ISBNs, and the ones that did were so rare that no scan of the cover existed.</div>
-      <img class="max-w-full image mb-10" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/betty-crocker-3.jpg">
-      <div class="body">And what's a design library without visuals! Kelly scouted some props a-la the 1950s Betty Crocker cookbook in our new collection, and she and Matt got to the task of shooting the 200+ covers with two interior shots each.</div>
-    </div>
-  </div>
-</section>
-<!--squiggly rule -->
-{% include hr-squiggle.html top='grey' bottom='orange' spacing='tight' %}
-
-<section class="bg-orange">
-  <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
-    <div class="caption uppercase tracking-wider text-center mb-5">
-      Type and Layout
-    </div>
-    <div class="subhead text-center mb-16 lg:w-2/3 lg:mx-auto">
-      With a database of books, type will be your most predominant design element. As Kelly's branding work started to settle on Aktiv Grotesk and other vanilla sans serifs, I put together a few sample sketches for Medium Rare Sans: a small type family that took some foundational vanilla ideas and added just a lil choco syrup.
-    </div>
-    <div class="flex mb-16">
-      <div class="text-center w-1/2 image bg-white px-4 py-2 lg:px-10 lg:py-8 mr-6">
-        <div class="caption mb-5">Medium Rare Sans Light</div>
-        <img class="max-w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/medium-rare-sans-light.png">
-      </div>
-      <div class="text-center w-1/2 image bg-white px-4 py-2 lg:px-10 lg:py-8 ml-6">
-        <div class="caption mb-5">Medium Rare Sans Bold</div>
-        <img class="max-w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/medium-rare-sans-bold.png">
-      </div>
-    </div>
-    <div class="flex flex-wrap items-center mb-16 lg:w-2/3 mx-auto rounded-lg border-black border-2">
-        <div class="w-10/12 mx-auto hanging-quote pullquote py-8">
-          “Custom type is the crown jewel of any project: to be able to dictate the visual form of language. Medium Rare Sans is exactly what this project needed to level it up to something special and memorable.”
-        </div>
-        <div class="bg-orange border-black border-t-2">
-          <div class="flex justify-between w-10/12 mx-auto">
-            <div class="w-9/12 self-center py-2 text-left">
-              <span class="subhead">
-                Matt Yow
-              </span>
-              <span class="caption uppercase">
-                Designer, Old Book
-              </span>
-            </div>
-            <img class="w-3/12 self-end pl-10 -mt-12" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}testimonials/matt-yow.png" />
-          </div>
-        </div>
-    </div>
-    <div class="block text-center body mx-auto md:w-2/3 lg:w-1/2 mb-16">
-       What started as a complementary headline font ended up a small typographic village. The goal of Medium Rare Sans was simple enough: feel rare, feel like a local used book store lost gem. Unusual proportions, overbites (see a), underbites (see g), flat bottomed t's and y's, and diamond dots all contribute to that feel. But the site was getting loaded with content, and diamond dots weren't gonna solve our hierarchy problem. The system needed something that could get small. Teaming up with <a class="squiggle" href="https://www.futurefonts.xyz/inga-plonnigs/messer">Messer</a> for body text, Medium Rare Caption became the bedrock of ignorable copy.
-    </div>
-    <div class="flex mb-10 image bg-white">
-      <div class="text-center w-1/2 m-4 lg:ml-10 lg:mr-5 lg:my-8">
-        <div class="caption mb-3 lg:mb-5">Medium Rare Caption</div>
-        <img class="max-w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/intercom-fucked-small-1.png">
-      </div>
-      <div class="text-center w-1/2 m-4 lg:mr-10 lg:ml-5 lg:my-8">
-        <div class="caption mb-3 lg:mb-5">Medium Rare Caption</div>
-        <img class="max-w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/intercom-fucked-small-2.png">
-      </div>
-    </div>
-    <div class="flex items-center mb-10">
-      <div class="w-1/2 mr-6">
-        <img class="max-w-full image" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/ingredients.png">
-      </div>
-      <div class="text-left w-1/2 ml-6">
-        <div class="body mb-5">
-          While Medium Rare Caption was the 12px workhorse, it still needed that thrift store find vibe. That exciting feeling of something found, lost, fumbled, fumbled again, recovered! Touchdown!
-        </div>
-        <div class="body mb-5">
-          It also needed to...
-        </div>
-        <div class="body mb-5 ml-10">
-          ahem
-        </div>
-        <div class="body mb-5 ml-20">
-          feel like a cookbook.
-        </div>
-      </div>
-    </div>
-    <div class="glow image bg-white block md:w-1/2 lg:w-1/3 mx-auto mb-10">
-      <img class="max-w-full px-5 py-3 lg:px-10 lg:py-8" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/fucked-small.png">
-    </div>
-    <div class="body text-center md:w-1/2 lg:w-5/12 mx-auto mb-16">
-      Medium Rare Caption included some good ol’ unicode icons for common data attached to each title. Behind the scenes, our yml database file was tracking 9 data points, but most were less than interesting to display.
-    </div>
-    <div class="text-center w-full image bg-white px-4 py-2 lg:px-10 lg:py-8 mb-10">
-      <div class="caption mb-5">Icons (LTR): Author, ISBN, Date, Publisher</div>
-      <img class="max-w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/icons.png">
-    </div>
-  </div>
-</section>
-<!--squiggly rule -->
-{% include hr-squiggle.html top='orange' bottom='pink' spacing='tight' %}
-<section class="bg-pink">
-  <div class="container py-10 md:py-16 lg:py-24 xl:py-32 mx-auto">
-    <div class="caption uppercase text-center mb-5">
-      Launch party
-    </div>
-    <div class="subhead text-center mb-20 mx-auto md:w-2/3">We held a launch party to intro the two-hundred employees at the San Francisco Intercom office to the library. The night was a success with many books perused, hors d'oeuvre eaten, and nearly 20 books checked out.</div>
-    <div class="flex flex-wrap justify-center mb-16">
-      <div class="max-w-full w-2/3 md:w-4/12 self-center mb-10 md:mx-5">
-        <img class="rounded-lg border-2 border-black" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny4." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/party-team.png">
-        <div class="body text-center mt-5 mb-5">
-          Dream team! LTR: Grumpy, Doc, Happy, Bashful
-        </div>
-      </div>
-      <img class="max-w-full w-5/12 md:w-5/12 self-center rounded-lg border-2 border-black mb-10 mx-5" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny3." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/party-bookmarks.png">
-      <img class="max-w-full w-5/12 md:w-5/12 self-center rounded-lg border-2 border-black mb-10 mx-5" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny2." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/party-table.png">
-    </div>
-    <video class="block image max-w-full mx-auto md:w-2/3 mb-10" autoplay muted playsinline loop>
+    <video class="block max-w-full w-full mb-2" autoplay muted playsinline loop>
       <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/collage.webm" type="video/webm">
         <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/collage.mp4" type="video/mp4">
     </video>
-    <div class="body text-center md:w-1/2 lg:w-1/3 mx-auto mb-16">
-      The party included free book totes and bookmarks for guests, and the whole library of books to checkout!
-    </div>
-    <div class="flex flex-wrap items-center mb-16 lg:w-2/3 mx-auto rounded-lg border-black border-2"><!--quote-->
-        <div class="w-10/12 mx-auto hanging-quote pullquote py-8">
-          “Kelly, Kyle, and Matt are the best designers to ever work for me!”
-        </div>
-        <div class="bg-orange border-black border-t-2">
-          <div class="flex justify-between w-10/12 mx-auto">
-            <div class="w-9/12 self-center py-2 text-left">
-              <span class="subhead">
-                Liz Gilmore
-              </span>
-              <span class="caption uppercase">
-                Design manager, Sketchers advocate
-              </span>
-            </div>
-            <img class="w-3/12 self-end pl-10 -mt-12" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}testimonials/liz-gilmore.png" />
-          </div>
-        </div>
-    </div><!--quote-->
-  </div>
+    <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/betty-crocker-3.jpg">
+    <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/party-team.png">
+    <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/party-table.png">
+    <img class="max-w-full w-full" src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/party-bookmarks.png">
+</section>
+<section class="bg-orange">
+  <div class="px-2 py-2">
+        {% include image-caption.html 
+        image="medium-rare-books/photoshoot-1.png" 
+        title="Art Direction and Photography" 
+        caption="We tried using each book's unique ISBN and the OpenLibrary API to populate the cover image for our database, but very few of our books had ISBNs, and the ones that did were so rare that no scan of the cover existed. Kelly painstakingly scouted some props and she and Matt got to the task of shooting the 200+ covers with two interior shots each."
+        theme="orange"
+      %}
+      {% include image-caption.html 
+        image="medium-rare-books/typography.png" 
+        title="Headline Type" 
+        caption="With a database of books, type was our most predominant design element. So I drew a custom typeface (Medium Rare Sans): a bizarre sans bolted onto a vanilla genre." 
+        theme="orange"
+      %}
+      {% include image-caption.html 
+        image="medium-rare-books/typography-2.png" 
+        title="Caption Type" 
+        caption='What started as a complementary headline font ended up a small typographic village. The goal of Medium Rare Sans was simple enough: feel rare, feel like a local used book store lost gem. Unusual proportions, overbites (see a), underbites (see g), flat bottomed t&apos;s and y&apos;s, and diamond dots all contribute to that feel. But the site was getting loaded with content, and diamond dots weren&apos;t gonna solve our hierarchy problem. The system needed something that could get small. Teaming up with <a class="squiggle" href="https://www.futurefonts.xyz/inga-plonnigs/messer">Messer</a> for body text, Medium Rare Caption became the bedrock of ignorable copy.' 
+        theme="orange"
+      %}
+      {% include image-caption.html 
+        image="medium-rare-books/icons.png" 
+        title="Icons" 
+        caption="Behind the scenes, our yml database file was tracking 9 data points, but most were less than interesting to display. I drew a set of icons to support and add intrigue."
+        theme="orange"
+      %}
 </section>
