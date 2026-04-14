@@ -36,63 +36,33 @@ header:
   <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny2." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-07.jpg">
 </section>
 
-<!--squiggly rule -->
-{% include hr-squiggle.html top='black' bottom='purple' %}
-
-<section class="z-10 bg-purple">
-  <div class="py-10 px-2">
-    <div class="caption uppercase tracking-wider text-center mb-5">
-        Designing for Engineers
-    </div>
-    <div class="subhead text-center mb-16 lg:w-2/3 lg:mx-auto">
-        A lot of my early explorations of the event branding were directly tied to programming or overly-reliant on geek nostalgia. The nerdy engineer is a tired cliché at this point and it’s a challenge to convince a smart audience that your efforts to target them are backed with sincere intentions.
-    </div>
-    <div class="max-w-full w-full md:w-2/3 mx-auto mb-5 md:mb-10">
-      <img class="rounded-lg border-2 border-black" src="{{ '/images/' | relative_url }}squiggles/process-draft-4.png" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/strategy.png">
-    </div>
-    <div class="body text-center md:w-1/2 lg:w-1/3 mx-auto mb-5 md:mb-16">
-      Some of the concepts I wrestled with in the brief, which asked that the event feel "unappoligetically nerdy", as written about on the <a href="https://www.intercom.com/blog/behind-design-work-building-intercom/">Intercom Blog</a>.
-    </div>
-    <div class="md:flex items-center">
-      <div class="md:w-1/2 lg:w-2/3 mb-5 md:mb-16">
-        <img class="rounded-lg max-w-full" src="{{ '/images/' | relative_url }}squiggles/bts-video-2-tiny.jpg" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/frank-draw.gif" />
-      </div>
-      <div class="body block text-left md:w-1/2 md:pl-10 lg:w-1/3">
-        <p>Through a stroke of remembering someone else's genius, I remembered the Hershey Fonts.</p>
-        <p>I first heard about the Hershey fonts at TypeCon 2016 in Seattle in <a href="https://vimeo.com/178015110">this talk</a> given by Frank Griesshammer. A.V. Hershey was a theoretical physicist who programmed instructions that plotted vectors into the shape of letters to use in his publication and computational work in the late 1960s. Hershey was a rare, prolific pioneer. His inspiring work as a creative coder and early digital type designer is a sure example of taking meaningful risks.</p>
-      </div>
-    </div>
-    <div class="md:flex md:justify-between items-center mb-5 md:mb-16">
-      <div class="mb-5 md:w-1/3 md:mb-0 md:mr-8">
-          <img class="w-64 mx-auto lg:w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hershey-font-1.png">
-      </div>
-      <div class="mb-5 md:w-1/3 md:mb-0 md:mx-4 body text-center">
-          There was one problem with using the Hershey fonts: they didn't exist. There were a few working .SVG files lying around the internet, but nothing close to what I needed for iterating on layouts, serving dynamic text on the landing page, and producing the printed and digital assets.
-      </div>
-      <div class="mb-5 md:w-1/3 md:mb-0 md:ml-8">
-          <img class="w-64 mx-auto lg:w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hershey-font-2.png">
-      </div>
-    </div>
-    <div class="md:flex items-center">
-      <div class="body block text-left md:w-1/2 md:pr-10 lg:w-1/3">
-        <p>With the help of Glyphs, I was able to convert those junky svgs into modern OTFs. Glyphs can take one master set of font outlines and offset the path on export to produce several different "weights" to easily get the style dialed in.</p>
-      </div>
-      <div class="md:w-1/2 lg:w-2/3 mb-5 md:mb-16">
-        <img class="rounded-lg max-w-full mb-5" src="{{ '/images/' | relative_url }}squiggles/bts-video-2-tiny.jpg" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hershey-fonts.png" />
-      </div>
-    </div>
-  </div>
-</section>
-  <!--squiggly rule -->
-{% include hr-squiggle.html top='purple' bottom='white' spacing='tight' %}
-
   <section class="bg-white">
-    <div class="">
+      <a href="https://vimeo.com/178015110">
+        <img class="w-full max-w-full px-2 py-2" src="{{ '/images/' | relative_url }}squiggles/bts-video-2-tiny.jpg" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/frank-draw.gif" />
+      </a>
+      <div class="body px-2 pb-2">
+        <div class="lg:w-1/3 text-gray-600">At the core of the identity lives the Hershey Fonts. A.V. Hershey, their creator, was a theoretical physicist who programmed instructions that plotted vectors into the shape of letters to use in his publication and computational work in the late 1960s.</div>
+      </div>
+      {% include image-caption.html 
+        image="building-intercom/strategy.png" 
+        title="Strategy" 
+        caption="My early explorations were overly-reliant on geek nostalgia. The nerdy engineer is a tired cliché at this point and it’s a challenge to convince a smart audience that your efforts to target them are backed with sincere intentions." 
+        theme="white"
+      %}
+      {% include image-caption.html 
+        image="building-intercom/hershey-font-1.png" 
+        title="Typography" 
+        caption="The Hershey fonts were a godsend. They were effortlessly nerdy. So I bundled together some .SVG files lying around the internet, and created a set of workable typefaces." 
+        theme="white"
+      %}
+    <img class="w-full max-w-full" src="{{ '/images/' | relative_url }}squiggles/bts-video-2-tiny.jpg" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hershey-fonts.png" />
+  </section>
+  <section class="bg-purple">
       {% include image-caption.html 
         video="building-intercom/ads" 
         title="Building on Typography" 
         caption="The Hershey fonts did all the heavy lifting. The 1960s computer vector ideas built into the type informed the colors, patterns, icons, and animations." 
-        theme="white"
+        theme="purple"
       %}
       <div class="flex flex-wrap justify-center px-2 py-2 ">
         <img class="w-full md:w-1/2 self-center" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/1710_BuildingIntercom_PosterA3_explore.png">
@@ -110,14 +80,12 @@ header:
         video="building-intercom/site-CTA" 
         title="Call to Action...s" 
         caption="Easter eggs, custom cursors and interactions antagonized the user to view the source, delete elements, click and drag to customize. The CTA cloned itself at a random position until it overwhelmed the entire site." 
-        theme="white"
+        theme="purple"
       %}
       {% include image-caption.html 
         image="building-intercom/icons.png" 
         title="Icons" 
         caption="The kit was rounded out with a set of icons to match the vector style of the Hershey fonts." 
-        theme="white"
+        theme="purple"
       %}
-
-   </div><!--container-->
  </section>
