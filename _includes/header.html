@@ -25,7 +25,15 @@
   {% include workmenu.html %}
   <div id="main" class="main relative flex-grow max-w-full overflow-x-hidden">
     <nav class="top-nav sticky top-0 z-50 bg-lime border-b-2 border-black" id="topNav">
-      <div class="flex items-center justify-end px-2 py-2 mx-auto">
+      <div class="flex items-center justify-between px-2 py-2 mx-auto">
+        <div class="flex items-center">
+          {% if page.audio %}
+          <audio controls class="h-8">
+            <source src="{{ '/images/' | relative_url }}{{ page.audio }}" type="audio/mpeg">
+          </audio>
+          {% endif %}
+        </div>
+        <div class="flex items-center">
         <a href="#footer" class="body text-gray-600 mr-6">About</a>
         {% if page.title != "No Context Kyle" %}
         <a href="{% link no-context-kyle.html %}" class="body text-gray-600 mr-6">No context Kyle</a>
@@ -34,5 +42,6 @@
           Menu
           <img class="ml-2" width="24" height="auto" src="{{ '/images/' | relative_url }}squiggles/Menu.svg" alt="Menu">
         </button>
+        </div>
       </div>
     </nav>
