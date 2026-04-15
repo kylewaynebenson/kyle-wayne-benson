@@ -5294,6 +5294,14 @@ video {
   z-index: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#main {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 640px) {
   .container {
     width: 96%;
@@ -5424,6 +5432,10 @@ video {
 }
 
 .bg-periwinkle .text-subtle {
+  color:#0E0A0C;
+}
+
+.bg-purple .text-subtle {
   color:#0E0A0C;
 }
 
