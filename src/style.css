@@ -103,13 +103,22 @@
 .leading-tighter {
   line-height: 1.1;
 }
+.bg-grey {
+  color:theme('colors.black');;
+}
 .bg-black {
-  background-color: #0E0A0C;
+  background-color:theme('colors.black');;
   color: white;
 }
 .bg-white {
   background-color: white;
-  color: #0E0A0C;
+  color:theme('colors.black');;
+}
+.bg-periwinkle .text-subtle {
+  color:theme('colors.black');;
+}
+.bg-orange .text-subtle {
+  color: theme('colors.mint');
 }
 .bg-check {
   background: url(../../images/backgrounds/check.png) repeat;

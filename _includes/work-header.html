@@ -9,7 +9,7 @@
       </div>
       <!-- Summary -->
       {% if page.summary %}
-      <p class="body text-gray-600 text-justify mb-16 leading-relaxed md:w-1/2">{{ page.summary }}</p>
+      <p class="body text-subtle text-justify mb-16 leading-relaxed md:w-1/2">{{ page.summary }}</p>
       {% endif %}
     </div>
 
@@ -21,7 +21,7 @@
           {% assign name_slug = collaborator.name | downcase | replace: ' ', '-' %}
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="{{ '/images/' | relative_url }}collaborators/{{ name_slug }}.png" alt="{{ collaborator.name }}" onerror="this.onerror=null;this.src='{{ '/images/' | relative_url }}collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">{{ collaborator.name }}</div>
+            <div class="body italic text-subtle">{{ collaborator.name }}</div>
             {% if collaborator.role %}<div class="body">{{ collaborator.role }}</div>{% endif %}
           </div>
         </div>

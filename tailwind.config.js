@@ -33,6 +33,7 @@ module.exports = {
       lime: '#DDF8B5',
       pink: '#EC6DEA',
       grey: '#C4C4C4',
+      subtle: '#7B7874',
     },
     stroke: theme => ({
       'purple-black': theme('colors.purple.black'),

@@ -12,7 +12,10 @@
   <meta property="og:description" content="{{ meta_description }}">
   {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/' | relative_url }}style.css?{{site.time | date: '%s%N'}}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css">
   <script type="text/javascript" src="{{ '/assets/js/' | relative_url }}js.js?{{site.time | date: '%s%N'}}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.7/dist/dotlottie-wc.js" type="module"></script>
   <link rel="icon" type="image/png" href="{{ '/images/' | relative_url }}squiggles/favicon.png"/>
   <meta property="og:image" content="{{ '/images/' | relative_url }}share-image.png">
@@ -34,11 +37,11 @@
           {% endif %}
         </div>
         <div class="flex items-center w-full justify-between lg:w-auto lg:justify-end">
-        <a href="#footer" class="body text-gray-600 mr-6">About</a>
+        <a href="#footer" class="body text-subtle mr-6">About</a>
         {% if page.title != "No Context Kyle" %}
-        <a href="{% link no-context-kyle.html %}" class="body text-gray-600 mr-6">No context Kyle</a>
+        <a href="{% link no-context-kyle.html %}" class="body text-subtle mr-6">No context Kyle</a>
         {% endif %}
-        <button class="body text-gray-600 outline-none flex items-center" onclick="toggleMenu()">
+        <button class="body text-subtle outline-none flex items-center" onclick="toggleMenu()">
           Menu
           <img class="ml-2" width="24" height="auto" src="{{ '/images/' | relative_url }}squiggles/Menu.svg" alt="Menu">
         </button>

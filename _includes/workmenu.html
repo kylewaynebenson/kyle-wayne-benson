@@ -1,14 +1,14 @@
 <nav class="md:sticky top-0 h-screen overflow-y-scroll min-h-full bg-lime" id="sideNav">
   <div class="px-2 py-2">
-    <div class="table w-full text-gray-600" style="border-collapse: collapse;">
-      <div class="table-row border-b border-dashed border-gray-600">
+    <div class="table w-full text-subtle" style="border-collapse: collapse;">
+      <div class="table-row border-b border-dashed border-subtle">
         <span class="table-cell text-left pb-10 body italic">Job</span>
         <span class="table-cell text-left pb-10 body italic"></span>
         <span class="table-cell text-right pb-10 body italic">Date</span>
       </div>
       {% assign sorted_work = site.work | sort: "year" | reverse %}
       {% for post in sorted_work %}
-        <a href="{{ post.url }}" class="table-row border-t border-dashed border-gray-600 hover:text-black">
+        <a href="{{ post.url }}" class="table-row border-t border-dashed border-subtle hover:text-black">
           <span class="table-cell body align-top whitespace-no-wrap py-1">{{ post.client }}</span>
           <span class="table-cell body align-top py-1 px-4">{{ post.summary | truncatewords: 18 }}</span>
           <span class="table-cell text-right body align-top whitespace-no-wrap py-1">{{ post.year }}</span>

@@ -35,8 +35,8 @@ collaborators:
 
 {% include work-header.html %}
 
-<section class="z-10 bg-black"><!--overview-->
-  <div class="px-2 py-10">
+<section class="z-10 bg-black py-2 pb-10"><!--overview-->
+  <div class="px-2">
     <video class="inline-block max-w-full w-full mb-2" controls loop autoplay muted>
         <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/overview.mp4" type="video/mp4">
         <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/overview.webm" type="video/webm">
@@ -57,49 +57,59 @@ collaborators:
           <img class="w-full max-w-full mb-3" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/type-final-text.svg">
         </div>
       </div>
-      <div class="marquee-image"><!-- marquee image-->
-        <div class="marquee-image-track">
-          <img src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/type-guidelines.png">
-        </div>
-      </div>
   </div><!--container-->
+  {% include carousel.html 
+    images="webflow-rebrand/type-guidelines-01.png,
+    webflow-rebrand/type-guidelines-02.png,
+    webflow-rebrand/type-guidelines-03.png,
+    webflow-rebrand/type-guidelines-04.png,
+    webflow-rebrand/type-guidelines-05.png,
+    webflow-rebrand/type-guidelines-06.png,
+    webflow-rebrand/type-guidelines-07.png" %}
   </section>
  <!--squiggly rule -->
   {% include hr-squiggle.html top='black' bottom='periwinkle' spacing='tight' %}
- <section class="bg-stars">
-   <div class="py-2 px-2">
+ <section class="bg-stars py-2">
       {% include image-caption.html 
-        image="webflow-rebrand/type-draft.png" 
-        title="Typography" 
-        caption="In order to span brand and product, the custom typeface needed to span display, text and ui. Inter proved a good start for exploring sketches." 
-        theme="periwinkle"
-      %}
+      image="webflow-rebrand/type-draft.png" 
+      title="Typography" 
+      caption="In order to span brand and product, the custom typeface needed to span display, text and ui. Inter proved a good start for exploring sketches." 
+      theme="periwinkle"
+    %}
+   <div class="my-2 px-2">
       <img class="w-full max-w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/type-sketch-01.svg">
       <img class="w-full max-w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/type-sketch-02.svg">
       <img class="w-full max-w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/type-sketch-03.svg">
       <img class="w-full max-w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/type-sketch-04.svg">
-      <img class="w-full max-w-full mb-10" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/type-sketch-05.svg">
+      <img class="w-full max-w-full pb-10" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/type-sketch-05.svg">
     </div>
  </section>
  <!--squiggly rule -->
   {% include hr-squiggle.html top='periwinkle' bottom='grey' spacing='tight' %}
   <section class="z-10 bg-grey px-2 py-2"><!--process-->
-      {% include image-caption.html 
-        image="webflow-rebrand/activity.png" 
-        title="Research Activity" 
-        caption="Webflow had attempted a few rebrands over the years. None of them shipped. So we put work into understanding what Webflow leaders and designers wanted, so that our work might see the light of day. Everyone at Webflow is pretty visually minded. " 
-        theme="grey"
-      %}
-    <div class="marquee-image"><!-- marquee image-->
-      <div class="marquee-image-track">
-        <img src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/activity-2.png">
-        <img src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" aria-hidden="true" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/activity-2.png">
-      </div>
-    </div>
-      {% include image-caption.html 
-        image="webflow-rebrand/activity-3.png" 
-        title="Results" 
-        caption="The brand boards were picked from a group of competitors, and from tech brands we admired. The results of the activity showed a shared admiration for brands with end to end cohesion, and design centered approach. " 
-        theme="grey"
-      %}
+    {% include image-caption.html 
+      image="webflow-rebrand/activity.png" 
+      title="Research Activity" 
+      caption="Webflow had attempted a few rebrands over the years. None of them shipped. So we put work into understanding what Webflow leaders and designers wanted, so that our work might see the light of day. Everyone at Webflow is pretty visually minded. " 
+      theme="grey"
+    %}
+    {% include carousel.html 
+      images="webflow-rebrand/research-activity-01.png,
+      webflow-rebrand/research-activity-02.png,
+      webflow-rebrand/research-activity-03.png,
+      webflow-rebrand/research-activity-04.png,
+      webflow-rebrand/research-activity-05.png,
+      webflow-rebrand/research-activity-06.png,
+      webflow-rebrand/research-activity-07.png,
+      webflow-rebrand/research-activity-08.png,
+      webflow-rebrand/research-activity-09.png,
+      webflow-rebrand/research-activity-10.png,
+      webflow-rebrand/research-activity-11.png,
+      webflow-rebrand/research-activity-12.png" %}
+    {% include image-caption.html 
+      image="webflow-rebrand/activity-3.png" 
+      title="Results" 
+      caption="The brand boards were picked from a group of competitors, and from tech brands we admired. The results of the activity showed a shared admiration for brands with end to end cohesion, and design centered approach. " 
+      theme="grey"
+    %}
  </section>

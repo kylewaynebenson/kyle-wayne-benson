@@ -1,0 +1,14 @@
+<div class="px-2 my-2">
+  <div class="splide" data-splide='{"type":"loop","autoScroll":{"speed":1},"perPage":1,"fixedWidth":"75%","gap":"0.5rem","pagination":false,"arrows":false,"snap":true}'>
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% assign images = include.images | split: ',' %}
+        {% for img in images %}
+        <li class="splide__slide">
+          <img class="w-full h-auto" src="{{ '/images/' | relative_url }}{{ img | strip }}" alt="">
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

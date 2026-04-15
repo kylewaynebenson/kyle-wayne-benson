@@ -11,6 +11,14 @@
   window.addEventListener('resize', setNavHeight);
 })();
 
+// Initialize Splide carousels
+document.addEventListener('DOMContentLoaded', function () {
+  var splides = document.querySelectorAll('.splide');
+  for (var i = 0; i < splides.length; i++) {
+    new Splide(splides[i]).mount(window.splide && window.splide.Extensions ? window.splide.Extensions : {});
+  }
+});
+
 // Menu toggle — works on both mobile and desktop
 function toggleMenu() {
   var sideNav = document.getElementById('sideNav');

@@ -34,14 +34,14 @@ header:
 
 {% include hr-squiggle.html top='black' bottom='white' spacing='tight' %}
 
-<section class="bg-white">
-  <div class="py-2 px-2">
-      {% include image-caption.html 
-        image="github-brand-refactor/logo-favicon.png" 
-        title="Updated Logo" 
-        caption="Mona's head got a little more circular, less boxy. The vectors transition better, are less tense overall. A subtle curve inflection and slightly bigger arm support a more tentacle-like feeling creates better overall symmetry." 
-        theme="white"
-      %}
+<section class="bg-white py-2">
+  {% include image-caption.html 
+    image="github-brand-refactor/logo-favicon.png" 
+    title="Updated Logo" 
+    caption="Mona's head got a little more circular, less boxy. The vectors transition better, are less tense overall. A subtle curve inflection and slightly bigger arm support a more tentacle-like feeling creates better overall symmetry." 
+    theme="white"
+  %}
+  <div class=" px-2">
     <div id="logo-scrub" class="relative md:flex md:justify-between items-center mx-auto">
         <div id="logo-left" class="md:w-5/12" style="transition: opacity 1.3s ease;">
             <img class="w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="Old GitHub logo" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/logo-old.svg">
@@ -56,9 +56,14 @@ header:
         </div>
     </div>
   </div><!--container-->
-  <div class="marquee-image"><!-- marquee image-->
-    <div class="marquee-image-track">
-        <img src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/logo-guidelines.png">
-    </div>
-  </div>
+  {% include carousel.html 
+    images="github-brand-refactor/logo-guidelines-01.png,
+    github-brand-refactor/logo-guidelines-02.png,
+    github-brand-refactor/logo-guidelines-03.png,
+    github-brand-refactor/logo-guidelines-04.png,
+    github-brand-refactor/logo-guidelines-05.png,
+    github-brand-refactor/logo-guidelines-06.png,
+    github-brand-refactor/logo-guidelines-07.png,
+    github-brand-refactor/logo-guidelines-08.png,
+    github-brand-refactor/logo-guidelines-09.png" %}
 </section>

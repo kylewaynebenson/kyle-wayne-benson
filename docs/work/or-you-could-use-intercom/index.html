@@ -11,8 +11,11 @@
   <meta name="description" content="Intercom's first out-of-home campaign included subway and billboard ads in SF, airport ads in Austin, and GTM spots across Facebook and Youtube.">
   <meta property="og:description" content="Intercom's first out-of-home campaign included subway and billboard ads in SF, airport ads in Austin, and GTM spots across Facebook and Youtube.">
   
-  <link rel="stylesheet" href="/assets/css/style.css?1776192103657362000">
-  <script type="text/javascript" src="/assets/js/js.js?1776192103657362000"></script>
+  <link rel="stylesheet" href="/assets/css/style.css?1776212019619889000">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css">
+  <script type="text/javascript" src="/assets/js/js.js?1776212019619889000"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.7/dist/dotlottie-wc.js" type="module"></script>
   <link rel="icon" type="image/png" href="/images/squiggles/favicon.png"/>
   <meta property="og:image" content="/images/share-image.png">
@@ -24,45 +27,45 @@
 <body class="bg-terrazzo md:flex">
   <nav class="md:sticky top-0 h-screen overflow-y-scroll min-h-full bg-lime" id="sideNav">
   <div class="px-2 py-2">
-    <div class="table w-full text-gray-600" style="border-collapse: collapse;">
-      <div class="table-row border-b border-dashed border-gray-600">
+    <div class="table w-full text-subtle" style="border-collapse: collapse;">
+      <div class="table-row border-b border-dashed border-subtle">
         <span class="table-cell text-left pb-10 body italic">Job</span>
         <span class="table-cell text-left pb-10 body italic"></span>
         <span class="table-cell text-right pb-10 body italic">Date</span>
       </div>
       
       
-        <a href="/work/github-brand-refactor/" class="table-row border-t border-dashed border-gray-600 hover:text-black">
+        <a href="/work/github-brand-refactor/" class="table-row border-t border-dashed border-subtle hover:text-black">
           <span class="table-cell body align-top whitespace-no-wrap py-1">GitHub</span>
           <span class="table-cell body align-top py-1 px-4">GitHub has a schedule of annual refreshes. These help the brand stay culturally relevant while keeping aligned as...</span>
           <span class="table-cell text-right body align-top whitespace-no-wrap py-1">2026</span>
         </a>
       
-        <a href="/work/webflow-rebrand/" class="table-row border-t border-dashed border-gray-600 hover:text-black">
+        <a href="/work/webflow-rebrand/" class="table-row border-t border-dashed border-subtle hover:text-black">
           <span class="table-cell body align-top whitespace-no-wrap py-1">Webflow</span>
           <span class="table-cell body align-top py-1 px-4">Webflow just turned ten. Its style was beginning to lag behind the competition. In an effort to catch...</span>
           <span class="table-cell text-right body align-top whitespace-no-wrap py-1">2023</span>
         </a>
       
-        <a href="/work/or-you-could-use-intercom/" class="table-row border-t border-dashed border-gray-600 hover:text-black">
+        <a href="/work/or-you-could-use-intercom/" class="table-row border-t border-dashed border-subtle hover:text-black">
           <span class="table-cell body align-top whitespace-no-wrap py-1">Intercom</span>
           <span class="table-cell body align-top py-1 px-4">Intercom's first out-of-home campaign included subway and billboard ads in SF, airport ads in Austin, and GTM spots...</span>
           <span class="table-cell text-right body align-top whitespace-no-wrap py-1">2018</span>
         </a>
       
-        <a href="/work/medium-rare-books/" class="table-row border-t border-dashed border-gray-600 hover:text-black">
+        <a href="/work/medium-rare-books/" class="table-row border-t border-dashed border-subtle hover:text-black">
           <span class="table-cell body align-top whitespace-no-wrap py-1">Intercom</span>
           <span class="table-cell body align-top py-1 px-4">The Medium Rare Books Library began in early 2018 with the acquisition of a selection of rare books...</span>
           <span class="table-cell text-right body align-top whitespace-no-wrap py-1">2018</span>
         </a>
       
-        <a href="/work/making-good/" class="table-row border-t border-dashed border-gray-600 hover:text-black">
+        <a href="/work/making-good/" class="table-row border-t border-dashed border-subtle hover:text-black">
           <span class="table-cell body align-top whitespace-no-wrap py-1">Cosmic</span>
           <span class="table-cell body align-top py-1 px-4">After a successful pilot, BYUtv bought one season of Making Good. Cosmic Pictures came to me for a...</span>
           <span class="table-cell text-right body align-top whitespace-no-wrap py-1">2018</span>
         </a>
       
-        <a href="/work/building-intercom/" class="table-row border-t border-dashed border-gray-600 hover:text-black">
+        <a href="/work/building-intercom/" class="table-row border-t border-dashed border-subtle hover:text-black">
           <span class="table-cell body align-top whitespace-no-wrap py-1">Intercom</span>
           <span class="table-cell body align-top py-1 px-4">Every fall Intercom hosts an event all about how Intercom is made. With their engineering and product teams...</span>
           <span class="table-cell text-right body align-top whitespace-no-wrap py-1">2017</span>
@@ -92,11 +95,11 @@
           
         </div>
         <div class="flex items-center w-full justify-between lg:w-auto lg:justify-end">
-        <a href="#footer" class="body text-gray-600 mr-6">About</a>
+        <a href="#footer" class="body text-subtle mr-6">About</a>
         
-        <a href="/no-context-kyle/" class="body text-gray-600 mr-6">No context Kyle</a>
+        <a href="/no-context-kyle/" class="body text-subtle mr-6">No context Kyle</a>
         
-        <button class="body text-gray-600 outline-none flex items-center" onclick="toggleMenu()">
+        <button class="body text-subtle outline-none flex items-center" onclick="toggleMenu()">
           Menu
           <img class="ml-2" width="24" height="auto" src="/images/squiggles/Menu.svg" alt="Menu">
         </button>
@@ -115,7 +118,7 @@
       </div>
       <!-- Summary -->
       
-      <p class="body text-gray-600 text-justify mb-16 leading-relaxed md:w-1/2">Intercom's first out-of-home campaign included subway and billboard ads in SF, airport ads in Austin, and GTM spots across Facebook and Youtube.</p>
+      <p class="body text-subtle text-justify mb-16 leading-relaxed md:w-1/2">Intercom's first out-of-home campaign included subway and billboard ads in SF, airport ads in Austin, and GTM spots across Facebook and Youtube.</p>
       
     </div>
 
@@ -127,7 +130,7 @@
           
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/me,-kyle.png" alt="Me, Kyle" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">Me, Kyle</div>
+            <div class="body italic text-subtle">Me, Kyle</div>
             <div class="body">Senior Brand Designer</div>
           </div>
         </div>
@@ -136,7 +139,7 @@
           
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/chelsea-spratling.png" alt="Chelsea Spratling" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">Chelsea Spratling</div>
+            <div class="body italic text-subtle">Chelsea Spratling</div>
             <div class="body">Copywriter</div>
           </div>
         </div>
@@ -145,7 +148,7 @@
           
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/dani-balenson.png" alt="Dani Balenson" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">Dani Balenson</div>
+            <div class="body italic text-subtle">Dani Balenson</div>
             <div class="body">Brand Designer</div>
           </div>
         </div>
@@ -154,7 +157,7 @@
           
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/brooks-chambers.png" alt="Brooks Chambers" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">Brooks Chambers</div>
+            <div class="body italic text-subtle">Brooks Chambers</div>
             <div class="body">Strategist</div>
           </div>
         </div>
@@ -163,7 +166,7 @@
           
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/stewart-scott-curran.png" alt="Stewart Scott-Curran" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">Stewart Scott-Curran</div>
+            <div class="body italic text-subtle">Stewart Scott-Curran</div>
             <div class="body">Creative Director</div>
           </div>
         </div>
@@ -172,7 +175,7 @@
           
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/justin-pervorse.png" alt="Justin Pervorse" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">Justin Pervorse</div>
+            <div class="body italic text-subtle">Justin Pervorse</div>
             <div class="body">Creative Director</div>
           </div>
         </div>
@@ -181,7 +184,7 @@
           
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/carly-wright.png" alt="Carly Wright" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">Carly Wright</div>
+            <div class="body italic text-subtle">Carly Wright</div>
             <div class="body">Producer</div>
           </div>
         </div>
@@ -190,7 +193,7 @@
           
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/jason-yim.png" alt="Jason Yim" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">Jason Yim</div>
+            <div class="body italic text-subtle">Jason Yim</div>
             <div class="body">Brand Designer</div>
           </div>
         </div>
@@ -199,7 +202,7 @@
           
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/lily-wang.png" alt="Lily Wang" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">Lily Wang</div>
+            <div class="body italic text-subtle">Lily Wang</div>
             <div class="body">Brand Designer</div>
           </div>
         </div>
@@ -208,7 +211,7 @@
           
           <img class="w-10 h-10 rounded-full mr-3 object-cover" src="/images/collaborators/anna-alexia-basile.png" alt="Anna Alexia-Basile" onerror="this.onerror=null;this.src='/images/collaborators/fallback.png';">
           <div>
-            <div class="body italic text-gray-600">Anna Alexia-Basile</div>
+            <div class="body italic text-subtle">Anna Alexia-Basile</div>
             <div class="body">Photographer</div>
           </div>
         </div>
@@ -323,9 +326,9 @@
         </div>
       </div>
       <div class="w-full flex flex-col justify-between flex-1 lg:w-2/3">
-        <p class="text-gray-600 body text-justify leading-relaxed">Art director, type designer and illustrator in Sunny Oakland California. I run Very Cool, work as a brand designer at GitHub, and run Song Club Records.</p>
+        <p class="text-subtle body text-justify leading-relaxed">Art director, type designer and illustrator in Sunny Oakland California. I run Very Cool, work as a brand designer at GitHub, and run Song Club Records.</p>
         <!-- Links table -->
-        <table class="w-full mt-32 text-gray-600">
+        <table class="w-full mt-32 text-subtle">
           <thead>
             <tr>
               <th class="text-left body italic pb-10">Category</th>
@@ -333,7 +336,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="border-t border-dashed border-gray-600">
+            <tr class="border-t border-dashed border-subtle">
               <td class="body align-top">Social</td>
               <td class="text-right align-top body">
                 <a class="block" href="https://twitter.com/kylewaynebenson">Twitter</a>
@@ -342,7 +345,7 @@
                 <a class="block" href="https://kylewaynebenson.substack.com/welcome">Substack</a>
               </td>
             </tr>
-            <tr class="border-t border-dashed border-gray-600">
+            <tr class="border-t border-dashed border-subtle">
               <td class="body align-top">Colophon</td>
               <td class="text-right align-top body">
                 <span class="block"><a href="https://verycoolstudio.com/typefaces/nudge">Font is VC Nudge SemiNormal</a></span>
@@ -350,7 +353,7 @@
                 <span class="block">Built on Jekyll with tailwind</span>
               </td>
             </tr>
-            <tr class="border-t border-dashed border-gray-600">
+            <tr class="border-t border-dashed border-subtle">
               <td class="body align-top">Contact</td>
               <td class="text-right align-top body">
                 <a href="mailto:hello@verycoolstudio.com">hello@verycoolstudio.com</a>
