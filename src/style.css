@@ -140,8 +140,9 @@
 .body {
   @apply font-nudge font-bold tracking-widest;
 }
-.body p {
-  @apply mb-5;
+p + p {
+  @apply mb-0;
+  text-indent: 6rem;
 }
 .caption {
   @apply font-nudge font-bold tracking-widest;

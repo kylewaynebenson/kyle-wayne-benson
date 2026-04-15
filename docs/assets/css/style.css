@@ -5459,8 +5459,9 @@ video {
   letter-spacing: 0.1em;
 }
 
-.body p {
-  margin-bottom: 1.25rem;
+p + p {
+  margin-bottom: 0;
+  text-indent: 6rem;
 }
 
 .caption {
