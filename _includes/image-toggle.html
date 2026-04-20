@@ -1,0 +1,29 @@
+{% assign toggle_images = include.images | split: ',' %}
+{% assign first_image = toggle_images[0] | strip %}
+{% assign second_image = toggle_images[1] | strip %}
+
+<div class="flex flex-col lg:flex-row px-2 py-2 {% if include.theme %}bg-{{ include.theme }}{% endif %}">
+  <div class="w-full flex flex-row lg:flex-col lg:w-1/3 pr-2 mb-2 lg:mb-0 justify-between">
+    {% if include.title %}
+    <div class="w-1/3 lg:w-full pr-2 body font-bold">{{ include.title }}</div>
+    {% else %}
+    <div></div>
+    {% endif %}
+    {% if include.caption %}
+    <div class="w-2/3 lg:w-full">
+      <hr class="hidden lg:block lg:border-black lg:border-dashed mb-2 w-8">
+      <div class="body text-subtle text-justify">{{ include.caption }}</div>
+    </div>
+    {% endif %}
+  </div>
+  <div class="w-full lg:w-2/3">
+    <div class="image-toggle-frame">
+      {% if first_image %}
+      <img class="w-full h-auto image-toggle-primary" src="{{ '/images/' | relative_url }}{{ first_image }}" alt="{{ include.title | default: '' }}">
+      {% endif %}
+      {% if second_image %}
+      <img class="w-full h-auto image-toggle-secondary" src="{{ '/images/' | relative_url }}{{ second_image }}" alt="{{ include.title | default: '' }} hover state">
+      {% endif %}
+    </div>
+  </div>
+</div>

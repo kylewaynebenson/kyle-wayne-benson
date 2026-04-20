@@ -1,5 +1,5 @@
-<header class="header">
-  <div class="px-2 py-2 flex flex-col justify-between {% if header.container_class %} {{ header.container_class }}{% endif %}" style="min-height: calc(100vh - var(--nav-height, 0px));">
+<header class="header {% if include.theme %}bg-{{ include.theme }}{% endif %}">
+  <div class="px-2 py-2 flex flex-col justify-between" style="min-height: calc(100vh - var(--nav-height, 0px));">
 
     <div class="flex-1">
       <!-- Title row -->

@@ -5,7 +5,6 @@ tags: ['brand', 'icon', 'type']
 year: "2023"
 client: Webflow
 image: .png
-theme: black
 summary: >-
   Webflow just turned ten. Its style was beginning to lag behind the competition. In an effort to catch up, the internal team put together a two month sprint to refresh the look of the brand and product design. The work was expanded and implemented by every designer at Webflow, the team listed here is just that core sprint group.
 collaborators:
@@ -33,7 +32,7 @@ collaborators:
     role: Creative Direction
 ---
 
-{% include work-header.html %}
+{% include work-header.html theme="periwinkle" %}
 
 <section class="z-10 bg-black py-2 pb-10"><!--overview-->
   <div class="px-2">
@@ -66,6 +65,25 @@ collaborators:
     webflow-rebrand/type-guidelines-05.png,
     webflow-rebrand/type-guidelines-06.png,
     webflow-rebrand/type-guidelines-07.png" %}
+  {% include image-toggle.html 
+    images="webflow-rebrand/icons-dark.png,
+    webflow-rebrand/icons-light.png"
+    title="Icons" 
+    caption="Marketing icons were our best plug and play asset. They showed up across slides and site, so they needed to feel consistent and branded." 
+  %}
+  {% include carousel.html 
+    images="webflow-rebrand/icon-guidelines-01.png,
+    webflow-rebrand/icon-guidelines-02.png,
+    webflow-rebrand/icon-guidelines-03.png,
+    webflow-rebrand/icon-guidelines-04.png,
+    webflow-rebrand/icon-guidelines-05.png,
+    webflow-rebrand/icon-guidelines-06.png" %}
+  {% include image-caption.html 
+    video="webflow-rebrand/icon-manager" 
+    title="Icon Manager" 
+    caption="At the end of the project, I built an Icon Manager which could connect product, marketing, and self serve. It also allowed us to deploy updates." 
+    theme="black"
+  %}
   </section>
  <!--squiggly rule -->
   {% include hr-squiggle.html top='black' bottom='periwinkle' spacing='tight' %}

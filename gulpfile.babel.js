@@ -122,7 +122,8 @@ task("startServer", () => {
 
 task('deploy', () => src('./docs/**/*').pipe(ghPages()));
 
-const buildSite = series("buildJekyll", "processImages", "processJavascript", "processStyles");
+const buildSite = series("buildJekyll", "processJavascript", "processStyles");
 
 exports.serve = series(buildSite, "startServer");
 exports.default = series(buildSite);
+exports.images = series("processImages");

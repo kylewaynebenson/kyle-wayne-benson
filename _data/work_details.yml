@@ -1,0 +1,18 @@
+building-intercom:
+  theme: purple
+  label: Purple
+github-brand-refactor:
+  theme: black
+  label: Black
+making-good:
+  theme: mint
+  label: Mint
+medium-rare-books:
+  theme: orange
+  label: Orange
+or-you-could-use-intercom:
+  theme: terrazzo
+  label: Terrazzo
+webflow-rebrand:
+  theme: black
+  label: Black

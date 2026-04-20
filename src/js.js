@@ -20,6 +20,47 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Menu toggle — works on both mobile and desktop
+function setMenuIcon(isOpen) {
+  var eyeL  = document.getElementById('menu-eye-l');
+  var eyeR  = document.getElementById('menu-eye-r');
+  var mouth = document.getElementById('menu-mouth');
+  if (!eyeL || !eyeR || !mouth) return;
+
+  if (isOpen) {
+    eyeL.setAttribute('d',  'M10 0H4V6H10V0Z');
+    eyeR.setAttribute('d',  'M18 0H12V6H18V0Z');
+    mouth.setAttribute('d', 'M22 6C18.1739 10.6273 3.82609 10.6273 0 6V11.5295C3.82609 16.1568 18.1739 16.1568 22 11.5295V6Z');
+  } else {
+    eyeL.setAttribute('d',  'M11 0H0V5H11V0Z');
+    eyeR.setAttribute('d',  'M22 0H11V5H22V0Z');
+    mouth.setAttribute('d', 'M22 10H0V15H22V10Z');
+  }
+}
+
+function animateMenuIcon(isOpen) {
+  var eyeL  = document.getElementById('menu-eye-l');
+  var eyeR  = document.getElementById('menu-eye-r');
+  var mouth = document.getElementById('menu-mouth');
+  if (!eyeL || !eyeR || !mouth) return;
+
+  var duration = 250;
+  if (isOpen) {
+    eyeL.animate( [{ d: 'path("M11 0H0V5H11V0Z")' },  { d: 'path("M10 0H4V6H10V0Z")' }],  { duration: duration, fill: 'forwards' });
+    eyeR.animate( [{ d: 'path("M22 0H11V5H22V0Z")' },  { d: 'path("M18 0H12V6H18V0Z")' }], { duration: duration, fill: 'forwards' });
+    mouth.animate([{ d: 'path("M22 10H0V15H22V10Z")' }, { d: 'path("M22 6C18.1739 10.6273 3.82609 10.6273 0 6V11.5295C3.82609 16.1568 18.1739 16.1568 22 11.5295V6Z")' }], { duration: duration, fill: 'forwards' });
+  } else {
+    eyeL.animate( [{ d: 'path("M10 0H4V6H10V0Z")' },  { d: 'path("M11 0H0V5H11V0Z")' }],  { duration: duration, fill: 'forwards' });
+    eyeR.animate( [{ d: 'path("M18 0H12V6H18V0Z")' },  { d: 'path("M22 0H11V5H22V0Z")' }], { duration: duration, fill: 'forwards' });
+    mouth.animate([{ d: 'path("M22 6C18.1739 10.6273 3.82609 10.6273 0 6V11.5295C3.82609 16.1568 18.1739 16.1568 22 11.5295V6Z")' }, { d: 'path("M22 10H0V15H22V10Z")' }], { duration: duration, fill: 'forwards' });
+  }
+}
+
+// Set correct icon state on load (menu is open by default on desktop)
+document.addEventListener('DOMContentLoaded', function () {
+  var isDesktop = window.matchMedia('(min-width: 768px)').matches;
+  if (isDesktop) setMenuIcon(true);
+});
+
 function toggleMenu() {
   var sideNav = document.getElementById('sideNav');
   var main = document.getElementById('main');
@@ -32,6 +73,9 @@ function toggleMenu() {
     sideNav.classList.toggle('closed');
     main.classList.toggle('expanded');
   }
+
+  var isOpen = isMobile ? sideNav.classList.contains('active') : !sideNav.classList.contains('closed');
+  animateMenuIcon(isOpen);
 }
 
 // Logo scrub – interactive Lottie that travels between two static SVG endpoints

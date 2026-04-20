@@ -114,16 +114,28 @@ html {
 .bg-grey {
   color:theme('colors.black');;
 }
+.bg-yellow {
+  background-color: theme('colors.yellow');
+  color:theme('colors.black');;
+}
+.bg-purple {
+  background-color: theme('colors.purple');
+  color:theme('colors.white');;
+}
 .bg-black {
   background-color:theme('colors.black');;
   color: white;
+}
+.bg-mint {
+  background-color: theme('colors.mint');
+  color:theme('colors.black');;
 }
 .bg-white {
   background-color: white;
   color:theme('colors.black');;
 }
 .bg-periwinkle .text-subtle {
-  color:theme('colors.black');;
+  color:theme('colors.darkblue');
 }
 .bg-purple .text-subtle {
   color:theme('colors.black');;
@@ -422,4 +434,38 @@ button:focus, button:active {
 .marquee:hover span {
   width: 100%;
   transform: translateX(-50%);
+}
+
+.image-toggle-frame {
+  position: relative;
+}
+
+.image-toggle-primary {
+  transition: opacity 250ms ease-in-out;
+}
+
+.image-toggle-secondary {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.image-toggle-frame:hover .image-toggle-secondary {
+  opacity: 1;
+}
+
+.image-toggle-frame:hover .image-toggle-primary {
+  opacity: 0;
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-0.35em); }
+}
+.wave-text span {
+  display: inline-block;
+}
+.wave-text:hover span {
+  animation: wave 0.6s ease-in-out calc(var(--i) * 0.04s) 1;
 }

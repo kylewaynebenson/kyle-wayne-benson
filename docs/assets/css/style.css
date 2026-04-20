@@ -5421,9 +5421,24 @@ html {
   color:#0E0A0C;
 }
 
+.bg-yellow {
+  background-color: ;
+  color:#0E0A0C;
+}
+
+.bg-purple {
+  background-color: #9B51E0;
+  color:#ffffff;
+}
+
 .bg-black {
   background-color:#0E0A0C;
   color: white;
+}
+
+.bg-mint {
+  background-color: #F0F9F4;
+  color:#0E0A0C;
 }
 
 .bg-white {
@@ -5432,7 +5447,7 @@ html {
 }
 
 .bg-periwinkle .text-subtle {
-  color:#0E0A0C;
+  color:#393F5C;
 }
 
 .bg-purple .text-subtle {
@@ -5813,6 +5828,45 @@ button:focus, button:active {
 .marquee:hover span {
   width: 100%;
   transform: translateX(-50%);
+}
+
+.image-toggle-frame {
+  position: relative;
+}
+
+.image-toggle-primary {
+  transition: opacity 250ms ease-in-out;
+}
+
+.image-toggle-secondary {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.image-toggle-frame:hover .image-toggle-secondary {
+  opacity: 1;
+}
+
+.image-toggle-frame:hover .image-toggle-primary {
+  opacity: 0;
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0);
+  }
+
+  50% { transform: translateY(-0.35em);
+  }
+}
+
+.wave-text span {
+  display: inline-block;
+}
+
+.wave-text:hover span {
+  animation: wave 0.6s ease-in-out calc(var(--i) * 0.04s) 1;
 }
 
 @media (min-width: 640px) {
