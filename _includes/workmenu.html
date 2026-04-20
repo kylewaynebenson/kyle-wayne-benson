@@ -9,7 +9,7 @@
         </div>
         {% assign sorted_work = site.work | sort: "year" | reverse %}
         {% for post in sorted_work %}
-          <a href="{{ post.url }}" class="table-row border-t border-dashed border-subtle hover:text-black">
+          <a href="{{ post.url }}" class="table-row border-t border-dashed border-subtle hover:text-black{% if post.url == page.url %} text-black{% endif %}">
             <span class="table-cell body align-top whitespace-no-wrap py-1">{{ post.client }}</span>
             <span class="table-cell body align-top py-1 px-4">{{ post.summary | truncatewords: 18 }}</span>
             <span class="table-cell text-right body align-top whitespace-no-wrap py-1">{{ post.year }}</span>
