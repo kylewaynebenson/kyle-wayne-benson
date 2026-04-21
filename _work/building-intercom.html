@@ -15,18 +15,13 @@ contributions:
 collaborators:
   - name: Me, Kyle
     role: Design, Engineering
-header:
-  variant: image
-  class: text-white
-  media_asset: thumbnail-transparent.gif
-  media_class: mx-auto w-2/3 md:w-64 mb-5
 ---
-{% include work-header.html theme="purple" %}
+{% include work-header.html theme="black" %}
 
 <section class="bg-black px-2 py-2">
   <video class="inline-block w-full" autoplay muted playsinline loop>
-    <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.mp4" type="video/mp4">
-    <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.webm" type="video/webm">
+    <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/landing-page.mp4" type="video/mp4">
+    <source src="{{ '/images/' | relative_url }}{{ page.title | slugify }}/landing-page.webm" type="video/webm">
   </video>
   <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/process-draft-4.png" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-03.jpg">
   <img class="max-w-full w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/process-draft--tiny3." alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/event-02.jpg">

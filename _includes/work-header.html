@@ -1,5 +1,16 @@
-<header class="header {% if include.theme %}bg-{{ include.theme }}{% endif %}">
-  <div class="px-2 py-2 flex flex-col justify-between" style="min-height: calc(100vh - var(--nav-height, 0px) + 2px);">
+{% assign theme_color = "#0E0A0C" %}
+{% if include.theme == "black" %}{% assign theme_color = "#0E0A0C" %}
+{% elsif include.theme == "purple" %}{% assign theme_color = "#9B51E0" %}
+{% elsif include.theme == "periwinkle" %}{% assign theme_color = "#7798F8" %}
+{% elsif include.theme == "orange" %}{% assign theme_color = "#EE724C" %}
+{% elsif include.theme == "mint" %}{% assign theme_color = "#F0F9F4" %}
+{% elsif include.theme == "green" %}{% assign theme_color = "#566B10" %}
+{% elsif include.theme == "terrazzo" %}{% assign theme_color = "#ffffff" %}
+{% elsif include.theme == "white" %}{% assign theme_color = "#ffffff" %}
+{% endif %}
+<header class="header {% if include.theme %}bg-{{ include.theme }}{% endif %}" style="position: relative; overflow: hidden;">
+  <canvas class="hero-canvas" data-hero-image="{{ '/images/' | relative_url }}{{ page.title | slugify }}/hero.png" data-theme-color="{{ theme_color }}" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
+  <div class="px-2 py-2 flex flex-col justify-between" style="min-height: calc(100vh - var(--nav-height, 0px) + 2px); position: relative; z-index: 1;">
 
     <div class="flex-1">
       <!-- Title row -->

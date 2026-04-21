@@ -5741,7 +5741,7 @@ p + p {
   transition: width 500ms ease-in-out;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #sideNav {
     display: block;
     position: sticky;
