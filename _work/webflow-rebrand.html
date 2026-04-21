@@ -101,14 +101,26 @@ collaborators:
       <img class="w-full max-w-full mb-2" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/type-sketch-04.svg">
       <img class="w-full max-w-full pb-10" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="" data-echo="{{ '/images/' | relative_url }}{{ page.title | slugify }}/type-sketch-05.svg">
     </div>
+    {% include image-caption.html 
+      image="webflow-rebrand/type-mono-01.png" 
+      title="Monospace" 
+      caption="A few years after the rebrand launched, I expanded the family into a set of Mono and Semimono styles." 
+      theme="periwinkle"
+    %}
+    {% include image-caption.html 
+      image="webflow-rebrand/type-mono-02.png" 
+      title="Monospace styles" 
+      caption="The set followed pretty standard width conventions, but was meant for marketing and display purposes rather than UI text." 
+      theme="periwinkle"
+    %}
  </section>
  <!--squiggly rule -->
   {% include hr-squiggle.html top='periwinkle' bottom='grey' spacing='tight' %}
-  <section class="z-10 bg-grey px-2 py-2"><!--process-->
+  <section class="z-10 bg-grey py-2"><!--process-->
     {% include image-caption.html 
       image="webflow-rebrand/activity.png" 
       title="Research Activity" 
-      caption="Pat and I put together an activity for understanding what Webflow leaders and designers wanted. This pulled together moodboards from competitors, and asked visually-minded stakeholders to provide feedback." 
+      caption="In the research phase, Pat and I put together an activity to help understand what Webflow leaders and designers wanted. This pulled together moodboards from competitors, and asked visually-minded stakeholders to provide feedback." 
       theme="grey"
     %}
     {% include carousel.html 
