@@ -11,9 +11,9 @@
   <meta name="description" content="The Medium Rare Books Library began in early 2018 with the acquisition of a selection of rare books from Dave Cuzner, Founder and Senior Editor at Grain Edit for the Intercom Brand Studio. Our brand director, Stewart Scott-Curan, started the library to help the team get better at critically assessing what elements should and should not influence their work. Our experience with the library inspired us to better organize and make available that material online.">
   <meta property="og:description" content="The Medium Rare Books Library began in early 2018 with the acquisition of a selection of rare books from Dave Cuzner, Founder and Senior Editor at Grain Edit for the Intercom Brand Studio. Our brand director, Stewart Scott-Curan, started the library to help the team get better at critically assessing what elements should and should not influence their work. Our experience with the library inspired us to better organize and make available that material online.">
   
-  <link rel="stylesheet" href="/assets/css/style.css?1776797736503614000">
+  <link rel="stylesheet" href="/assets/css/style.css?1776800065147982000">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css">
-  <script type="text/javascript" src="/assets/js/js.js?1776797736503614000"></script>
+  <script type="text/javascript" src="/assets/js/js.js?1776800065147982000"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.7/dist/dotlottie-wc.js" type="module"></script>
@@ -25,7 +25,8 @@
   <meta property="og:image:height" content="1024">
 
 </head>
-<body class="lg:flex">
+<body class="bg-check">
+<div class="site-container lg:flex">
   <nav class="lg:sticky top-0 h-screen overflow-y-scroll min-h-full bg-lime flex flex-col" id="sideNav">
   <div class="flex flex-col h-full">
     <div class="px-2 py-2">
@@ -114,9 +115,9 @@
 
 <header class="header bg-orange" style="position: relative; overflow: hidden;">
   <canvas class="hero-canvas" data-hero-image="/images/medium-rare-books/hero.png" data-theme-color="#EE724C" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
-  <div class="px-2 py-2 flex flex-col justify-between" style="min-height: calc(100vh - var(--nav-height, 0px) + 2px); position: relative; z-index: 1;">
+  <div class="flex flex-col justify-between" style="min-height: calc(100vh - var(--nav-height, 0px) + 2px); position: relative; z-index: 1;">
 
-    <div class="flex-1">
+    <div class="px-2 py-2 bg-orange">
       <!-- Title row -->
       <div class="flex justify-between items-baseline">
         <h1 class="body italic" itemprop="name headline">Medium Rare Books</h1>
@@ -124,11 +125,12 @@
       </div>
       <!-- Summary -->
       
-      <p class="body text-subtle text-justify mb-16 leading-relaxed md:w-1/2">The Medium Rare Books Library began in early 2018 with the acquisition of a selection of rare books from Dave Cuzner, Founder and Senior Editor at <a class="squiggle" href="https://grainedit.com/">Grain Edit</a> for the Intercom Brand Studio. Our brand director, Stewart Scott-Curan, started the library to help the team get better at critically assessing what elements should and should not influence their work. Our experience with the library inspired us to better organize and make available that material online.</p>
+      <p class="body text-subtle text-justify leading-relaxed md:w-1/2">The Medium Rare Books Library began in early 2018 with the acquisition of a selection of rare books from Dave Cuzner, Founder and Senior Editor at <a class="squiggle" href="https://grainedit.com/">Grain Edit</a> for the Intercom Brand Studio. Our brand director, Stewart Scott-Curan, started the library to help the team get better at critically assessing what elements should and should not influence their work. Our experience with the library inspired us to better organize and make available that material online.</p>
       
     </div>
+    <div class="flex-1 mb-16"></div>
 
-    <div>
+    <div class="px-2 py-2 bg-orange">
       
       <div class="flex flex-wrap">
         
@@ -356,6 +358,7 @@
 
   gtag('config', 'UA-26480322-1');
 </script>
+</div><!-- .site-container -->
 </body>
 </html>
 

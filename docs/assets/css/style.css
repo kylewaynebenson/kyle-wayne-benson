@@ -5471,6 +5471,19 @@ html {
   background: url(../../images/backgrounds/check.png) repeat;
 }
 
+.site-container {
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1900px) {
+  .site-container {
+    border-left: 2px solid #0E0A0C;
+    border-right: 2px solid #0E0A0C;
+  }
+}
+
 .bg-buildingintercompurple {
   background: #e52aff;
 }
