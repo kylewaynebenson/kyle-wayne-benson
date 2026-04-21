@@ -143,6 +143,13 @@ html {
 .bg-orange .text-subtle {
   color: theme('colors.mint');
 }
+.bg-green {
+  background-color: theme('colors.green');
+  color: theme('colors.white');
+}
+.bg-green .text-subtle {
+  color: theme('colors.lime');
+}
 .bg-check {
   background: url(../../images/backgrounds/check.png) repeat;
 }

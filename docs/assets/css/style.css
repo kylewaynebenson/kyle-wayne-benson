@@ -5458,6 +5458,15 @@ html {
   color: #F0F9F4;
 }
 
+.bg-green {
+  background-color: #566B10;
+  color: #ffffff;
+}
+
+.bg-green .text-subtle {
+  color: #DDF8B5;
+}
+
 .bg-check {
   background: url(../../images/backgrounds/check.png) repeat;
 }

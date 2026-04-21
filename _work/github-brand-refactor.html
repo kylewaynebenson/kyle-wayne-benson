@@ -40,18 +40,18 @@ header:
     caption="Mona's head got a little more circular, less boxy. The vectors transition better, are less tense overall. A subtle curve inflection and slightly bigger arm support a more tentacle-like feeling creates better overall symmetry." 
     theme="white"
   %}
-  <div class=" px-2">
+  <div class="px-2">
     <div id="logo-scrub" class="relative md:flex md:justify-between items-center mx-auto">
         <div id="logo-left" class="md:w-5/12" style="transition: opacity 1.3s ease;">
             <img class="w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="Old GitHub logo" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/logo-old.svg">
-            <div class="caption text-center mt-5">Old (2015-2025)</div>
+            <div class="body text-center text-subtle mt-2">Old (2015-2025)</div>
         </div>
         <div id="logo-lottie" class="absolute md:w-5/12" style="pointer-events: none; z-index: 10; opacity: 0; transition: opacity 0.4s ease;">
             <dotlottie-wc id="logo-player" src="{{ '/images/' | relative_url }}github-brand-refactor/logo.lottie" style="width: 100%; height: 100%; display: block;"></dotlottie-wc>
         </div>
         <div id="logo-right" class="md:w-5/12 glow" style="transition: opacity 1.3s ease;">
             <img class="w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="New GitHub logo" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/logo-new.svg">
-            <div class="caption text-center mt-5">New (2026+)</div>
+            <div class="body text-center text-subtle mt-2">New (2026+)</div>
         </div>
     </div>
   </div><!--container-->
@@ -65,4 +65,35 @@ header:
     github-brand-refactor/logo-guidelines-07.png,
     github-brand-refactor/logo-guidelines-08.png,
     github-brand-refactor/logo-guidelines-09.png" %}
+    <div class="px-2">
+      <img class="w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="Old GitHub logo" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/logotype.png">
+    </div>
+</section>
+{% include hr-squiggle.html top='white' bottom='black' spacing='tight' %}
+<section class="bg-black py-2">
+  {% include image-toggle.html 
+    images="github-brand-refactor/type-optical-sample-01.png,github-brand-refactor/type-optical-sample-02.png" 
+    title="Expanding Mona Sans" 
+    caption="I added optical sizes and monospace styles to Mona Sans' already large design space. This allowed me to redraw and space characters to suit their size." 
+    theme="black"
+  %}
+  <div class="px-2">
+    <img class="w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="Mona Sans display styles" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/type-optical-styles.png">
+    <img class="w-full" src="{{ '/images/' | relative_url }}squiggles/bigcloud.gif" alt="Mona Sans monospace styles" data-echo="{{ '/images/' | relative_url }}github-brand-refactor/type-monospace-styles.png">
+  </div>
+</section>
+{% include hr-squiggle.html top='black' bottom='green' spacing='tight' %}
+<section class="bg-green py-2">
+  {% include image-toggle.html 
+    images="github-brand-refactor/layout-dark.png,github-brand-refactor/layout-light.png" 
+    title="Layout system" 
+    caption="The layout system split visuals into clean halfs or thirds. Each side represented the two parts of GitHub's offering: creative, infrastructure. The layout side was legible, grided, seperate. The illustration side was creative, dimensional, expressive." 
+    theme="green"
+  %}
+  {% include carousel.html 
+    images="github-brand-refactor/layout-guidelines-01.png,
+    github-brand-refactor/layout-guidelines-02.png,
+    github-brand-refactor/layout-guidelines-03.png,
+    github-brand-refactor/layout-guidelines-04.png,
+    github-brand-refactor/layout-guidelines-05.png" %}
 </section>
