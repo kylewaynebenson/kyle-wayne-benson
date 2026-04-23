@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true });
       renderer.setSize(w, h);
-      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
       var scene = new THREE.Scene();
       var camera = new THREE.OrthographicCamera(-0.5, 0.5, 0.5, -0.5, 0, 1);
@@ -260,6 +260,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'uniform float uDotSize;',
         'uniform float uDotDarkness;',
         'uniform float uOverlayOpacity;',
+        'uniform float uReveal;',
         'varying vec2 vUv;',
         '',
         '// Hash for per-tile phase offset',
@@ -386,6 +387,17 @@ document.addEventListener('DOMContentLoaded', function () {
         '  float pattern = mix(base, circleM, hover);',
         '  color *= mix(uDotDarkness, 1.0, pattern);',
         '',
+        '  // Reveal wipe — tiles grow from 4 seed points with organic jitter',
+        '  vec2 uv = tileCoord * uTileSize / uResolution;',
+        '  float d1 = length(uv - vec2(0.2, 0.3));',
+        '  float d2 = length(uv - vec2(0.8, 0.2));',
+        '  float d3 = length(uv - vec2(0.35, 0.8));',
+        '  float d4 = length(uv - vec2(0.75, 0.7));',
+        '  float tileDist = min(min(d1, d2), min(d3, d4)) * 1.6;',
+        '  tileDist += hash(tileCoord) * 0.12;',
+        '  float reveal = smoothstep(tileDist - 0.02, tileDist + 0.02, uReveal);',
+        '  color = mix(uThemeColor, color, reveal);',
+        '',
         '  gl_FragColor = vec4(color, 1.0);',
         '}'
       ].join('\n');
@@ -409,7 +421,8 @@ document.addEventListener('DOMContentLoaded', function () {
           uScrollSpeed:    { value: 0.002 },
           uDotSize:        { value: 6.0 },
           uDotDarkness:    { value: 0.5 },
-          uOverlayOpacity: { value: 1.0 }
+          uOverlayOpacity: { value: 1.0 },
+          uReveal:         { value: 0.0 }
         };
 
         var mat = new THREE.ShaderMaterial({
@@ -423,12 +436,14 @@ document.addEventListener('DOMContentLoaded', function () {
         scene.add(mesh);
 
         var startTime = null;
+        var revealDuration = 0.8;
 
         function animate(time) {
           if (startTime === null) startTime = time;
           var elapsed = (time - startTime) / 1000.0;
 
           uniforms.uTime.value = elapsed;
+          uniforms.uReveal.value = Math.min(elapsed / revealDuration, 1.0);
 
           // Smoothly follow cursor
           mousePixel.lerp(mouseTarget, 0.12);
